@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: rgb(238,238,238);
+    height: fit-content;
+    padding-top: 40px;
+}
+.myOrders_navbar {
+    /* width: 80%; */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.myOrders_navbar ul{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style-type: none;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    place-items: center;
+}
+
+
+.myOrders_navbar .navbrand_logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin-left: -3rem;
+}
+
+.myOrders_navbar .digicert_image{
+    height: 50px;
+    width: 100px;
+}
+
+.account_overall a{
+    font-size: 25px;    
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+section{
+    display: flex;
+    gap: 10px; 
+    max-width: 970px; 
+    margin: auto;
+}
+
+
+
+.account_lists{
+    background-color: white;
+    width: 25%;
+    /* padding: 10px; */
+    
+}
+
+.account_lists .ul_lists_items li{
+    list-style-type: none;
+}
+
+.cover_of_account_name{
+    display: flex;
+    place-items: center;
+    gap: 10px;
+}
+
+.account_name{
+    padding: 23px 20px;
+    /* height: 30px; */
+    /* width: 30px; */
+    background-color: rgb(45,45,45);
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    
+}
+
+.account_overview{
+    border-top: 3px solid rgb(226, 226, 226);
+    border-bottom: 3px solid rgb(226, 226, 226);
+}
+
+.my_orders{
+    border-bottom: 3px solid rgb(226, 226, 226);
+}
+
+.my_details{
+    border-bottom: 1px solid rgb(226, 226, 226);
+
+}
+
+.my_account_details{
+    background-color: white; 
+    width: 67%;
+}
+
+
+.subDiv_myOrders{
+    background-color: white;
+
+}
+
+.shopping_details{
+    background-color: white;
+}
+
+.hanger_image{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
