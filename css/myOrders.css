@@ -54,7 +54,7 @@ main{
 
 section{
     display: flex;
-    gap: 10px; 
+    gap: 15px; 
     max-width: 970px; 
     margin: auto;
 }
@@ -97,11 +97,18 @@ section{
 
 .my_orders{
     border-bottom: 3px solid rgb(226, 226, 226);
+    border-left: 3px solid blue;
+    background-color: rgb(238,238,238);
+}
+
+.li_my_details{
+    place-items: center;
+
 }
 
 .my_details{
     border-bottom: 1px solid rgb(226, 226, 226);
-
+    
 }
 
 .my_account_details{
@@ -112,7 +119,14 @@ section{
 
 .subDiv_myOrders{
     background-color: white;
+    border-bottom: 10px solid rgb(226, 226, 226);
+    padding:10px 0px 40px 7px;
+}
 
+.subDiv_myOrders h6{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .shopping_details{
@@ -124,7 +138,31 @@ section{
     width: 100px;
 }
 
+.myorders_icon{
+    font-size: 1.7em;
+}
 
+.a_tag_icons{
+    text-decoration-color: black;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+a .icons{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: .5rem;
+    
+}
+
+a span {
+    /* text-decoration: none; */
+    /* text-decoration-color: black; */
+    color: black;
+}
 
 
 
