@@ -101,6 +101,22 @@
 
 document.querySelector('.Navbar__Link-toggle')
   .addEventListener('click', classToggle);
+
+
+
+
+
+  function classToggle() {
+
+const sidebars = document.querySelector('.account_lists')
+
+sidebars.forEach(nav => nav.classList.toggle('account_lists_show'))
+}
+document.querySelector('.Navbar__Link-toggle')
+.addEventListener('click', classToggle)
+
+
+
      </script>
 
 </body>
