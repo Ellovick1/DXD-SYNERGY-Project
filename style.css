@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    /* color: white; */
+}
+
+/************* TOP NAVBAR *************/
+
+.top_navbar {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.top_navbar ul {
+    display: flex;
+}
+
+.top_navbar li {
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+.top_navbar ul li a {
+    text-decoration: none;
+    color: silver;
+}
+
+.top_navbar li a img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid var(--sm859b);
+    box-shadow: 0 0 0 1px var(--na3s62);
+    margin: 0 17px;
+}
+
+/******* MAIN NAVBAR **************/
+
+.navbrand_logo a {
+    /* width: 100px; */
+    /* height: 30px; */
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.main_navbar {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.main_navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.main_navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.search_bar {
+    border-radius: 50px;
+    width: 50rem;
+    padding: 10px 10px;
+    border: none;
+}
+
+.input_field_area {
+    position: relative;
+}
+
+.search_icon {
+    position: absolute;
+    right: .5rem;
+    top: .2rem;
+    color: black;
+}
+
+.checkout_suitcase {
+    width: 50px;
+    height: 30px;
+}
+
+::placeholder {
+    color: silver;
+}
+
+.user_icon {
+    font-size: 23px;
+}
+
+
+/*********** SUB CATETEGORY ***********/
+
+.sub_category {
+    background-color: rgb(38, 224, 102);
+    padding: 10px 55px;
+}
+
+.sub_category ul {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px 50px; */
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.sub_category ul a {
+    text-decoration: none;
+    font-weight: 900;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 20px;
+}
+
+.sub_category h5 {
+    font-weight: bolder;
+    font-size: 15px;
+    color: black;
+}
+
+.hero_section {
+    background-image: url('https://content.asos-media.com/-/media/homepages/unisex/generic-hp/archive/oct-2021/microsoftteams-image-(10).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    height: 45rem;
+    margin: auto;
+}
+
+.hero_section .hero_section_header {
+    padding-top: 10rem;
+}
+
+.shop_men_button,
+.shop_women_button {
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.shop_women_button {
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    background-color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+section {
+    background: white;
+}
+
+.bottom_hero_section {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+
+}
+
+.bottom_hero_section p {
+    font-weight: 600;
+}
+
+
+/************ FOOTER  ****************/
+
+footer .icons_and_images{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer .electronic_images{
+    display: flex;
+    height: fit-content;
+    padding-left: 60px;
+    border-left: 1px solid #999;
+    margin-left: 70px;
+}
+footer .electronic_images li{
+    list-style-type:none;
+}
+
+.font_awesome_icons{
+    height: 20px;
+    padding: 0;
+}
+
+.facebook_icon{
+    font-size: 15px;
+    padding: 6px;
+    margin: 0px 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(60,90,153);
+}
+
+.instagram_icon{
+    font-size: 15px;
+    padding: 6px;
+    margin: 0px 20px;
+    color: white;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.snapchat_icon{
+    font-size: 15px;
+    padding: 6px;
+    margin: 0px 20px;
+    color: white;
+    background-color: rgb(255,252,2);
+    border-radius: 50%;
+}
+
+footer .visa_image,
+.mastercard_image,
+.pay-pal_image,
+.american-express_image,
+.visa-electron_image
+{
+    height: 20px;
+    width: 30px;
+    margin: 0px 20px;
+}
+
+.footer_infomation{
+    background-color: rgb(238,238,238);
+    padding: 30px 25px;
+}
+
+.footer_infomation p{
+    margin-bottom: 10px;
+}
+
+.footer_infomation a{
+    text-decoration: none;
+    color: rgb(122, 119, 119);
+    font-size: small;
+}
+
+.footer_flag{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* vertical-align: middle; */
+    border: 1px solid var(--sm859b);
+    box-shadow: 0 0 0 1px var(--na3s62);
+    /* margin: 0 17px; */
+}
+
+.bottom_of_footer{
+    background-color: rgb(221,221,221);
+    padding: 10px 0;
+}
+
+.bottom_of_footer a{
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+    padding: 0 10px;    
+}
+
+.bottom_of_footer .privacy_and_cookies,
+.terms_and_condition{
+    border-right: 1px solid rgb(131, 129, 129);
+    
+}
+
+.bottom_of_footer .copyright{
+    font-size: 12px;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
