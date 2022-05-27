@@ -162,7 +162,7 @@ form{
     display: none;
     justify-content: space-between;
     color: rgb(38, 18, 63);
-    box-shadow: 0 0.0625rem 0.125rem 0.0625rem silver;
+    /* box-shadow: 0 0.0625rem 0.125rem 0.0625rem silver; */
     padding: 0px 50px 0px 50px;
     align-items: center;
     position: fixed;
@@ -226,34 +226,32 @@ li .btn2{
 
 @media (max-width: 768px) {
     .sidebar{
-        height: 80px;
         display: block;
-        justify-content: space-between;
         color:white;
-        box-shadow: 0 0.0625rem 0.125rem 0.0625rem silver;
-        /* padding: 0px 50px 0px 50px; */
+        border: none;
         align-items: center;
-        position: fixed;
-        width: 100%;
+        /* position: fixed; */
+        width: 5px;
         z-index: 1;
     
         /* flex-wrap: wrap; */
     }
-    .sidebar ul {
+    .sidebar ul{
         position: fixed;
         top: 25px;
         left: -100%;
         background: white;
+        color: black;
         height: 100vh;
         width: 35%;
         margin-left: 0;
         display: block; 
-        /* transition: all .5s ease; */
-        transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+        transition: all .5s ease;
+        /* transition: transform .25s ease-out,-webkit-transform .25s ease-out; */
     }
 
     .items ul{
-        display: none;
+        /* display: none; */
     }
 
     .buttons {
@@ -266,7 +264,7 @@ li .btn2{
         content: "\f00d";
     }  
     .sidebar ul li {
-        margin: 30px 0;
+        /* margin: 30px 0; */
 
     }
     .sidebar .togglebar i {
@@ -291,6 +289,190 @@ li .btn2{
     border: none;
     border-bottom: 1px solid silver;
 }
+
+.container {
+    display: none;
+}
+.button.active {
+    /* color: #C00; */
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+
+.toggle_button_container{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(45,45,45,.1);
+    box-sizing: border-box;
+}
+
+.toggle_button_container .li_women {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid silver;
+}
+
+.toggle_button_container .li_men {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.li_women button{
+    height: 49px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 50px;
+    outline: none;
+    /* border: none; */
+}
+
+.li_men button{
+    height: 49px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--10c6hzt);
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 50px;
+    outline: none;
+}
+
+.sidebar_home_image{
+    background-image: url(/images/sidebar_home_image.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.sidebar_image_items{
+    background-image: url(/images/sidebar_image_items.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.sidebar_image_items2{
+    background-color: rgb(229, 226, 226);
+    /* background-image: url(/images/sidebar_image_items.jpg); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    
+}
+.sidebar_image_items > p{
+   font-size: 11px;
+   font-weight: 700;
+   padding-left: 10px;
+    
+}
+
+
+/* ********SIDEBAR CAROUSAL****************** */
+/* .testimonial {
+    position: relative;
+    margin: 20px 0;
+    padding: 30px 30px 0  0;
+    background: #746c61;
+}
+
+.testimonial .containers {
+    max-width: 900px;
+}
+
+.testimonial .testimonial-icon {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.testimonial .testimonial-icon i {
+    font-size: 60px;
+    color: rgba(256, 256, 256, .5);
+}
+
+.testimonial .testimonial-item {
+    position: relative;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.testimonial .testimonial-img {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.testimonial .testimonial-item img {
+    margin: 0 auto;
+    width: 120px;
+    padding: 10px;
+    border: 5px dotted #ffffff;
+    border-radius: 100px;
+}
+
+.testimonial .testimonial-text {
+    position: relative;
+    margin-top: -70px;
+    padding: 65px 35px 30px 35px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 500px;
+}
+
+.testimonial .testimonial-item p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial .testimonial-text h3 {
+    color: #746c61;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonial .testimonial-text h4 {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.testimonial .owl-dots {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.testimonial .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(256, 256, 256, .5);
+}
+
+.testimonial .owl-dot.active {
+    background: #ffffff;
+} */
+
 
 
 /*********** SUB CATETEGORY ***********/
