@@ -13,6 +13,24 @@ function setContent($el) {
     
     $el.addClass('active');
     $($el.data('rel')).show();
+};
+
+
+// set content on click
+$('.fashion_category').click(function(event) {
+    event.preventDefault();
+    setCategory($(this));
+});
+
+// set content on load
+$('.fashion_category.active').length && setCategory($('.fashion_category.active'));
+
+function setCategory($el) {
+    $('.fashion_category').removeClass('active');
+    $('.category').hide();
+    
+    $el.addClass('active');
+    $($el.data('rel')).show();
 }
 
 

@@ -115,6 +115,7 @@ form{
 
 .input_field_area {
     position: relative;
+    padding: 0px 10px;
 
 }
 
@@ -127,7 +128,7 @@ form{
 
 .search_icon {
     position: absolute;
-    right: .5rem;
+    right: .9rem;
     top: .3rem;
     color: black;
 }
@@ -153,6 +154,10 @@ form{
 
 .user_icon {
     font-size: 23px;
+}
+
+.category{
+    display: none;
 }
 
 /************** SIDEBAR CATEGORY ********/
@@ -231,6 +236,7 @@ li .btn2{
         border: none;
         align-items: center;
         /* position: fixed; */
+        top: .5rem;
         width: 5px;
         z-index: 1;
     
@@ -551,11 +557,10 @@ li .btn2{
     padding-top: 10rem;
 }
 
-.shop_men_button,
-.shop_women_button {
+.shop_men_button{
     border: none;
     color: black;
-    padding: 10px 30px;
+    padding: 10px 38px;
     background-color: white;
     font-weight: bold;
     margin: 0 10px;
@@ -592,12 +597,286 @@ section {
 
 
 
+/**************** SUBCATEGORY MEN SECTION ****************** */
+
+.hero_section_image {
+    /* height: 650px;
+    width: 1200px;*/
+    padding: 20px;
+    margin: auto; 
+    display: block;
+    max-width:98%;
+    width: auto;
+    height: auto;
+    /* max-height:200px; */
+}
+
+.topmen_images_clothing{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    padding: 10px 32px ;
+    text-align: center;
+}
+
+.topmen_images_clothing h6 {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.topmen_images_clothing2{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px 20px ;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .topmen_images_clothing{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        padding: 10px 20px ;
+    }
+
+    .topmen_images_clothing2{
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px 20px ;
+        text-align: center;
+    }
+    
+}
+
+.outlet_discount{
+    background-color: rgb(204,255,0);
+    text-align: center;
+    padding: 10px;
+    /* font-weight: 900; */
+}
+
+.outlet_discount > h3 {
+    font-weight: 900;
+}
+.outlet_discount > h6 {
+    font-weight: 600;
+}
+.outlet_discount > p {
+    font-size: 12px ;
+}
+
+.trending_brands_section{
+    text-align: center;
+}
+.brand_logos{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+@media (max-width:768px) {
+    .brand_logos{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+.topmen_images_clothing2 h6 {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.topmen_images_clothing2 button {
+    margin-top: 10px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.topmen_images_clothing2 button:hover {
+    background-color: black;
+    color: white;
+    transition: .8s;
+}
+
+/* TRENDING BRANDS SECTION MEN */
+
+.trending_brands_section{
+    margin-top: 70px;
+}
+
+.trending_brands_section h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    /* color: red; */
+}
+
+.brand_logos_image{
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+
+/**************** SUBCATEGORY WOMEN SECTION ****************** */
+
+.hero_section_image_women {
+    /* height: 650px;
+    width: 1200px;*/
+    padding: 20px;
+    margin: auto; 
+    display: block;
+    max-width:98%;
+    width: auto;
+    height: auto;
+    /* max-height:200px; */
+}
+
+.topwomen_images_clothing{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    padding: 10px 32px ;
+    text-align: center;
+}
+
+.topwomen_images_clothing h6 {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.topwomen_images_clothing2{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px 20px ;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .topwomen_images_clothing{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+        padding: 10px 20px ;
+    }
+    
+    .topwomen_images_clothing2{
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px 20px ;
+        text-align: center;
+    }
+}
+
+
+.outlet_discount_women{
+    background-color: rgb(204,255,0);
+    text-align: center;
+    padding: 10px;
+}
+
+.outlet_discount_women > h3 {
+    font-weight: 900;
+}
+.outlet_discount_women > h6 {
+    font-weight: 600;
+}
+.outlet_discount_women > p {
+    font-size: 12px ;
+}
+
+.trending_brands_women_section{
+    text-align: center;
+}
+.brand_logos_women{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+@media (max-width:768px) {
+    .brand_logos_women{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+.topwomen_images_clothing2 h6 {
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.topwomen_images_clothing2 button {
+    margin-top: 10px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.topwomen_images_clothing2 button {
+    background-color: black;
+    color: white;
+    transition: .8s;
+}
+
+
+/* TRENDING BRANDS SECTION WOMEN */
+
+.trending_brands_women_section{
+    margin-top: 70px;
+}
+
+.trending_brands_women_section h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    /* color: red; */
+}
+
+.brand_logos_image_women{
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+
+
+
+
+
+
+
+
+
 /************ FOOTER  ****************/
+
+footer{
+    border-top: 1px solid silver;
+}
 
 footer .icons_and_images{
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: fit-content;
+    margin: auto;
 }
 
 footer .electronic_images{
@@ -606,12 +885,24 @@ footer .electronic_images{
     padding-left: 60px;
     border-left: 1px solid #999;
     margin-left: 70px;
+    width: 100%;
 }
+
+@media (max-width:768px) {
+    footer .electronic_images{
+        display:none;
+    }
+    footer .icons_and_images{
+        display:none;
+    }
+}
+
 footer .electronic_images li{
     list-style-type:none;
 }
 
 .font_awesome_icons{
+    display: flex;
     height: 20px;
     padding: 0;
 }
@@ -654,16 +945,24 @@ footer .visa_image,
     margin: 0px 20px;
 }
 
-.footer_infomation{
+.footer_information{
+
     background-color: rgb(238,238,238);
     padding: 30px 25px;
 }
 
-.footer_infomation p{
+@media (max-width:768px) {
+    .footer_information{
+        display: none !important;
+    }
+    
+}
+
+.footer_information p{
     margin-bottom: 10px;
 }
 
-.footer_infomation a{
+.footer_information a{
     text-decoration: none;
     color: rgb(122, 119, 119);
     font-size: small;
