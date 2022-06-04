@@ -243,7 +243,7 @@ li .btn2{
         background: white;
         color: black;
         height: 100vh;
-        width: 35%;
+        width: 250px;
         margin-left: 0;
         display: block; 
         transition: all .5s ease;
@@ -359,32 +359,62 @@ li .btn2{
     outline: none;
 }
 
-.sidebar_home_image{
+.sidebar_home_image_women{
     background-image: url(/images/sidebar_home_image.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 220px 100%;
     
 }
-.sidebar_image_items{
+.sidebar_image_items_women{
     background-image: url(/images/sidebar_image_items.jpg);
-    background-position: center;
-    background-size: cover;
-    
-}
-.sidebar_image_items2{
-    background-color: rgb(229, 226, 226);
-    /* background-image: url(/images/sidebar_image_items.jpg); */
-    /* background-position: center; */
+    background-position: 0 0;
+    background-size: 220px 100%;
+    height: 70px;
     /* background-size: cover; */
     
 }
-.sidebar_image_items > p{
+
+.sidebar_image_items_women > p{
+    font-size: 11px;
+    font-weight: 700;
+    padding-left: 10px;
+     
+ }
+
+.sidebar_home_image_men{
+    background-image: url(/images/sidebar_home_image_men.jpg);
+    background-position: center;
+    background-size: 220px 100%;
+    
+}
+.sidebar_image_items_men{
+    background-image: url(/images/sidebar_image_items_men.jpg);
+    background-position: 0 0;
+    background-size: 220px 100%;
+    height: 70px;
+    
+}
+
+
+.sidebar_image_items_men > p{
    font-size: 11px;
    font-weight: 700;
    padding-left: 10px;
     
 }
 
+.sales_discount{
+    background-image: url('https://images.asos-media.com/navigation/gradient_1_1m_041021?&$n_320w$');
+    height: 76px;
+}
+
+.sales_discount > p{
+    background-image: url('https://images.asos-media.com/navigation/gradient_1_1m_041021?&$n_320w$');
+    height: 76px;
+    /* padding-top: 30px 0 0 20px; */
+    font-weight: 700;
+    font-size: 11px;
+}
 
 /* ********SIDEBAR CAROUSAL****************** */
 /* .testimonial {
