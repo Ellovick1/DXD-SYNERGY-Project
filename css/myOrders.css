@@ -9,19 +9,20 @@ img {
     width: 100%;
 }
 
-main{
-    background-color: rgb(238,238,238);
+main {
+    background-color: rgb(238, 238, 238);
     height: fit-content;
     padding-top: 40px;
     /* padding-bottom: 40px; */
 }
+
 .myOrders_navbar {
     /* width: 80%; */
     max-width: 1000px;
     margin: auto;
 }
 
-.myOrders_navbar ul{
+.myOrders_navbar ul {
     display: grid;
     grid-template-columns: 33% 50% 17%;
     list-style-type: none;
@@ -31,48 +32,49 @@ main{
 }
 
 
-.myOrders_navbar .navbrand_logo a{
+.myOrders_navbar .navbrand_logo a {
     text-decoration: none;
     /* margin-left: 10rem; */
 }
-.synergy_logo{
-    height: 50px;
-    width: 100px;    
-}
 
-.myOrders_navbar .digicert_image{
+.synergy_logo {
     height: 50px;
     width: 100px;
 }
 
-.account_overall a{
-    font-size: 25px;    
+.myOrders_navbar .digicert_image {
+    height: 50px;
+    width: 100px;
+}
+
+.account_overall a {
+    font-size: 25px;
     font-weight: bold;
     text-decoration: none;
     color: rgb(32, 32, 32);
 }
 
-section{
+section {
     display: flex;
-    gap: 15px; 
-    max-width: 970px; 
+    gap: 15px;
+    max-width: 970px;
     margin: auto;
 }
 
 
 
-.account_lists{
+.account_lists {
     background-color: white;
     width: 30%;
     /* padding: 10px; */
-    
+
 }
 
-.account_lists .ul_lists_items li{
+.account_lists .ul_lists_items li {
     list-style-type: none;
 }
 
-.cover_of_account_name{
+.cover_of_account_name {
     display: flex;
     place-items: center;
     gap: 10px;
@@ -81,96 +83,97 @@ section{
     left: -2.5rem;
 }
 
-.account_name_shorten{
+.account_name_shorten {
     padding: 23px 20px;
     /* height: 30px; */
     /* width: 30px; */
-    background-color: rgb(45,45,45);
+    background-color: rgb(45, 45, 45);
     color: white;
     font-size: 30px;
     font-weight: 900;
     border-radius: 50%;
-    
+
 }
 
-.account_name{
+.account_name {
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.account_overview{
+.account_overview {
     border-top: 3px solid rgb(226, 226, 226);
     border-bottom: 3px solid rgb(226, 226, 226);
 }
 
-.my_orders{
+.my_orders {
     border-bottom: 3px solid rgb(226, 226, 226);
     border-left: 3px solid blue;
-    background-color: rgb(238,238,238);
+    background-color: rgb(238, 238, 238);
 }
 
-.li_my_details{
+.li_my_details {
     place-items: center;
 
 }
 
-.my_details{
+.my_details {
     /* display: block; */
-    
+
 }
 
-.my_account_details{
-    background-color: white; 
+.my_account_details {
+    background-color: white;
     width: 67%;
     height: fit-content;
     padding-bottom: 30px;
 }
 
 
-.subDiv_myOrders{
+.subDiv_myOrders {
     background-color: white;
     border-bottom: 10px solid rgb(226, 226, 226);
-    padding:30px 40px;
+    padding: 30px 40px;
 }
 
-.subDiv_myOrders h6{
+.subDiv_myOrders h6 {
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-.shopping_details{
+.shopping_details {
     background-color: white;
     text-align: center;
     padding-top: 30px;
     /* height: fit-content; */
 }
 
-.hanger_image{
+.hanger_image {
     height: 100px;
     width: 100px;
     margin: auto;
 }
 
-.myorders_icon{
+.myorders_icon {
     font-size: 1.7em;
 }
 
-.a_tag_icons{
+.a_tag_icons {
     text-decoration-color: black;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     text-decoration-color: black;
 }
-a .icons{
+
+a .icons {
     text-decoration: none;
     color: black;
     position: relative;
     left: .5rem;
-    
+
 }
 
 .overview {
@@ -182,26 +185,26 @@ a .icons{
 
 
 
-.myDetails{
+.myDetails {
     display: flex;
     color: black;
     text-decoration: none;
     text-decoration-color: black;
 }
 
-.myDetails .add_card{
+.myDetails .add_card {
     text-decoration: none;
     color: black;
     /* text-decoration-color: black; */
 }
 
 
-.myDetails .sub_mydetails{
+.myDetails .sub_mydetails {
     color: black;
     font-weight: 400;
 }
 
-.address_card{
+.address_card {
     text-decoration: none;
     color: black;
     text-decoration-line: none;
@@ -211,7 +214,7 @@ a .icons{
     left: .5rem;
 }
 
-.span_mydetails{
+.span_mydetails {
     text-decoration-color: black;
     display: block;
     color: black;
@@ -220,41 +223,41 @@ a .icons{
     border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-.social_accts{
+.social_accts {
     color: black;
     font-size: 13px;
 }
 
-.sign_out{
+.sign_out {
     transform: rotateY(180deg)
 }
 
-.no_orders{
-    font-weight: 700 ;
+.no_orders {
+    font-weight: 700;
 }
 
-.best_shopping{
+.best_shopping {
     font-size: 13px;
 }
 
-.start_shopping_button{
+.start_shopping_button {
     padding: 10px 90px;
     border: none;
-    background-color: rgb(45,45,45);
+    background-color: rgb(45, 45, 45);
 }
 
-.start_shopping_button a{
+.start_shopping_button a {
     color: white;
     font-weight: 700;
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: white;
 
 }
 
-.footer_parameters{
+.footer_parameters {
     max-width: 970px;
     display: flex;
     align-items: center;
@@ -263,6 +266,159 @@ footer{
     justify-content: space-between;
 }
 
-.footer_items{
+.footer_items {
     font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.barcode_image {
+    background-image: url(/images/barcode_image.png);
+}
+
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    section {
+        display: block;
+    }
+
+    nav {
+        /* display: block;
+        width: 100%; */
+    }
+
+    .my_account_details {
+        width: 100%;
+        background-color: unset;
+    }
+
+    .shopping_details {
+        width: 93%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        left: 2rem;
+        cursor: pointer;
+    }
+
+    .myorder_box {
+        display: none;
+    }
+
+    .account_lists {
+        display: none;
+    }
+
+    .account_lists_show {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .subDiv_myOrders {
+        /* display: flex; */
+        position: relative;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .subDiv_myOrders h3 {
+        text-align: center;
+    }
+
+    .cover_of_account_name {
+        display: block;
+        text-align: center;
+        height: fit-content;
+        padding: 8px;
+        justify-content: center;
+        left: 0rem;
+        top: 5.5rem;
+        background-color: white;
+    }
+
+    .barcode_image {
+        background-image: url(/images/barcode_image.png);
+        height: 12rem;
+        width: 100%;
+        position: absolute;
+    }
+
+    .ul_lists_items {
+        /* position: absolute; */
+        margin-top: 5rem;
+    }
+
+    .account_name_shorten {
+        padding: 23px 20px;
+        height: 150px;
+        width: 150px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: -3rem;
+        margin: auto;
+        background-color: rgb(45, 45, 45);
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        border-radius: 50%;
+    }
+
+
+
+
+    .footer_parameters {
+        display: block;
+        text-align: center;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
