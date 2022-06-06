@@ -43,7 +43,11 @@ img {
     margin: 0 17px;
 }
 
+
+
 /******* MAIN NAVBAR **************/
+
+
 
 .main_navbar {
     background-color: black;
@@ -64,13 +68,10 @@ img {
 }
 
 .navbrand_logo a {
-    /* width: 100px; */
+    width: 40px;
     /* height: 30px; */
-    font-size: 25px;
     text-decoration: none;
-    color: white;
-    font-weight: 900;
-    
+    color: unset;
 }
 
 
@@ -139,8 +140,9 @@ form{
 }
 
 .checkout_suitcase {
-    width: 50px;
-    height: 30px;
+    font-size: 21px;
+    /* width: 50px; */
+    /* height: 30px; */
 }
 
 ::placeholder {
@@ -159,6 +161,11 @@ form{
 .category{
     display: none;
 }
+
+.form2{
+    display: none;
+}
+
 
 /************** SIDEBAR CATEGORY ********/
 
@@ -1003,6 +1010,10 @@ footer .visa_image,
     font-size: 12px;
 }
 
+.cookies{
+    display: flex;
+    justify-content: end;
+}
 
 
 /**************** MEDIA QUERIES ***************************/
@@ -1028,9 +1039,49 @@ footer .visa_image,
     border-right: 1px solid silver;
     display: none;
     align-items: center;
-}
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .cookies{
+        justify-content: center;
+    }
+
+
+
 
 }
 
+@media (max-width: 520px) {
+    .form1{
+        display: none;
+    }
 
+    .form2{
+        display: block;
+        padding: 10px 0;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+      }
+    
+      input[type=text] {
+        width: 130px;
+        height: 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 50px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+      }
+      
+}
 
