@@ -225,30 +225,17 @@
 
     <script>
         function classToggle() {
-
             const sidebars = document.querySelectorAll('.account_lists');
-            // const account_details = document.getElementById('.my_account_detail');
             sidebars.forEach(nav => nav.classList.toggle('account_lists_show'));
-            // account_details.removeChild();
+            
+            document.querySelector(".my_account_details").classList.toggle('d-none')
 
         }
-        document.querySelector('.Navbar__Link-toggle', '.my_account_detail')
-            .addEventListener('click', classToggle)
 
+        const details = document.querySelector('.Navbar__Link-toggle');
+        details.addEventListener('click', classToggle)
 
-        // const my_account_detail = document.getElementById('.my_account_detail');
-        
-        // my_account_detail.addEventListener('click', function handleClick(event) {
-        //     event.target.remove();
-        // });
     </script>
-
-
-    <!-- const box = document.getElementById('box');
-
-    box.addEventListener('click', function handleClick(event) {
-    event.target.remove();
-    }); -->
 
 
 

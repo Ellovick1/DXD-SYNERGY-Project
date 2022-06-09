@@ -4,27 +4,34 @@
     box-sizing: border-box;
 }
 
+
+body{
+    background-color: rgb(238,238,238);
+
+}
+
 img {
     height: 100%;
     width: 100%;
 }
 
 main{
-    background-color: rgb(238,238,238);
     height: 100vh;
     padding: 10px;
     padding-top: 70px;
+    width: fit-content;
+    margin: auto;
 }
 
 section{
     background-color: white;
-    width: 50%;
+    width: 600px;
     margin: auto;
     padding: 20px;
 }
 
 nav{
-    width: 80%;
+    width: 600px;
     margin: auto;
 }
 
