@@ -134,7 +134,10 @@ small {
     margin: 0 11rem;
 }
 
-
+.filters_container {
+    position: sticky;
+    top: 0;
+}
 
 .clear_all_button {
     border: none;
