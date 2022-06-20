@@ -14,161 +14,181 @@
   <!-- Css link -->
   <link rel="stylesheet" href="/css/checkout.css">
   <!-- <link rel="stylesheet" href="/css/myAccount.css"> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <main>
-    <nav class="mb-4">
+    <nav>
       <div class="synergy_logo">
         <a href="/index.html">
           <img src="/images/DXD_synergy_logo.jpg" alt="">
         </a>
       </div>
+
+      <div class="checkout">
+        <h3>CHECKOUT</h3>
+      </div>
+
     </nav>
 
     <section class="row section justify-content-center">
-     
-      <div class="col-md-4 bg-white">
+
+      <div class="col-md-4 bg-white description_content">
 
         <div class="d-flex justify-content-between pt-4">
-            <h5>1 ITEM</h5>
-            <a href=""><p>Edit</p></a>
+          <h5>1 ITEM</h5>
+          <a href="">
+            <p>Edit</p>
+          </a>
         </div>
         <hr>
-        <div>
-          <div><img src="/images/black-sneakers1.jpg" alt=""></div>
+        <div class="d-flex details_container">
+          <div class="items"><img src="/images/black-sneakers1.jpg" alt=""></div>
+          <div>
             <h3 class="pounds">£13.00</h3>
             <p>Synergy sneakers in grey</p>
-            <h5>GREY   <span>S</span></h5>
-            <p class="">Qty:  <span><b>1</b></span></p>
+            <h5>GREY <span>S</span></h5>
+            <p class="">Qty: <span><b>1</b></span></p>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>£13.00</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h5>TOTAL TO PAY</h5>
+          <h5>£13.00</h5>
         </div>
 
-    </div>
+      </div>
 
       <div class="col-md-6">
         <div class="signin_header p-3 mb-2">
           <h5 class="mb-2">DELIVERY COUNTRY:</h5>
-          <div class="d-flex">
+          <div class="d-flex place-items-center">
             <div class="nigeria_flag"><img src="/images/nigerian_flag.png" alt=""></div>
-            <select name="" id="" class="w-100">
+            <select name="" id="" class="w-75">
               <option value="">Nigeria</option>
             </select>
           </div>
         </div>
 
-        <div class="dropdown mb-2">
-          <div class="bg-white btn-outline-none dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            PROMO/STUDENT CODE OR VOUCHERS
-          </div>
-          <div class="dropdown-menu promo_dropdown" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-
-          </div>
+        <div class=" d-flex justify-content-between bg-white mb-2 p-3 promo_content">
+          <h5>PROMO/STUDENTS CODE OR VOUCHERS</h5>
+          <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
         </div>
 
-        <div class="bg-white p-3 mb-2">
-          <h4>EMAIL ADDRESS</h4>
+        <div class="bg-white p-3 mb-1">
+          <h4 class="mb-4">EMAIL ADDRESS</h4>
 
           <P>princewill1@gmail.com</P>
         </div>
 
-        <div class="bg-white p-3 mb-2">
-          <div class="sign_up_with">
-            <h5>DELIVERY ADDRESS</h5>
-            <h6>ADD ADDRESS</h6>
-          </div>
-        </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">FIRST NAME:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <div>
+          <form class="bg-white px-5 py-4">
+            <div class="sign_up_with mb-4">
+              <h4 class="mb-3">DELIVERY ADDRESS</h4>
+              <h5>ADD ADDRESS</h5>
+            </div>
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">FIRST NAME:</label>
+              <input type="email" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="">
             </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">LAST NAME:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">LAST NAME:</label>
+              <input type="email" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="">
             </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">MOBILE<small id="emailHelp" class="form-text text-muted">(For delivery
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="font-weight-bold d-md-flex text-muted">MOBILE<small id="emailHelp"
+                  class="form-text text-muted pl-md-3">(For delivery
                   updates ):</small> </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <input type="email" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">ADDRESS:</label>
+              <input type="text" class="form-control w-md-75 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="">
+              <input type="text" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Optional">
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">CITY:</label>
+              <input type="email" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="">
             </div>
 
             <div class="form-group">
-              <label for="exampleInputEmail1">ADDRESS:</label>
-              <input type="text" class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="">
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">COUNTRY</label>
+              <input type="email" class="form-control w-md-75" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Optional">
             </div>
 
             <div class="form-group">
-              <label for="exampleInputEmail1">CITY:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <label for="exampleInputEmail1" class="font-weight-bold text-muted">POSTCODE:</label>
+              <input type="email" class="form-control w-md-50" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="">
             </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">COUNTRY</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Optional">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleInputEmail1">POSTCODE:</label>
-              <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Optional">
-            </div>
-
-            <div>
-              <h6 class="interseted_in">COUNTRY</h6>
+            <div class="mb-4 pt-3">
+              <h6 class="interseted_in mb-4">COUNTRY:</h6>
               <p>Nigeria</p>
 
-              <div class="form-group">
-                <button class="start_shopping_button w-75"><a href="">DELIVER TO THIS ADDRESS</a></button>
+              <div class="form-group pt-3">
+                <button class="start_shopping_button"><a href="">DELIVER TO THIS ADDRESS</a></button>
 
               </div>
             </div>
 
           </form>
-          <!-- 
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="DELIVERY OPTIONS">
-            </div>
-      
-            <div class="form-group">
-              <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="PAYMENT">
-            </div>
-      
-            <div class="form-group">
-              <button class="start_shopping_button"><a href="">JOIN DXD SYNERGY</a></button>
-      
-            </div>
-
-          </form> -->
 
 
+          <form class="bg-muted mt-4 py-3">
+            <div class="form-group">
+              <input type="text" class="form-control w-100  muted_input" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="DELIVERY OPTIONS">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control muted_input w-100 text-muted" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="PAYMENT">
+            </div>
+
+            <div class="form-group">
+              <button class="start_shopping_button_muted"><a href="">PLACE ORDER</a></button>
+
+            </div>
+
+          </form>
+          <div class="w-75">
+            <p class="text-muted privacy_policy">
+              By placing your order you agree to our <a href="">Terms and condition,</a><a href=""> Privacy</a> and
+              <a href="">returns Policy</a> . You also consent
+              to some of your data being stored by ASOS, which may be used to make future shopping experiences better
+              for you.
+            </p>
+          </div>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <footer>
+    <footer class="bg-white py-3">
       <div class="footer_details">
-        <div class="privacy_policy">
-          <a href="">Privacy Policy</a>
-        </div>
         <div class="terms_condition">
-          <a href="">Terms and condition</a>
+          <a href="">DXD Synergy Help</a>
         </div>
       </div>
 
