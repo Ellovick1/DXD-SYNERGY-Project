@@ -101,6 +101,11 @@ a .delivery_van{
     background-color: rgb(1,136,73);
 }
 
+.checkout_button a {
+    color: white;
+    text-decoration: none;
+}
+
 .we_accept{
     font-size: 15px;
     font-weight: 700;
