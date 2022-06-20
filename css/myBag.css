@@ -89,6 +89,8 @@ a .delivery_van{
 
 .checkout_container{
     height: fit-content;
+    position: sticky;
+    top: 0;
 }
 
 .checkout_button{
@@ -139,7 +141,7 @@ select {
     color: black;
     border: 2px solid silver ;
     font-weight: 700;
-    width: 40%;
+    width: 70%;
     /* background-color: white; */
 }
 
@@ -148,8 +150,13 @@ select {
     text-decoration: none;
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
     .see_similar {
         width: 100%;
+    }
+
+    .checkout_container{
+        height: fit-content;
+        position: static;
     }
 }

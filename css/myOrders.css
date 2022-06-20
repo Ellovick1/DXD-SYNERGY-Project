@@ -126,6 +126,9 @@ section {
     width: 67%;
     height: fit-content;
     padding-bottom: 30px;
+
+    position: sticky;
+    top: 0;
 }
 
 
@@ -323,6 +326,8 @@ footer {
     .my_account_details {
         width: 100%;
         background-color: unset;
+
+        position: static;
     }
 
     .shopping_details {
