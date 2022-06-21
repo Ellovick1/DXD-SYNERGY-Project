@@ -45,6 +45,8 @@ nav{
 
 .description_content{
     height: fit-content;
+    position: sticky;
+    top: 0;
     margin-bottom: 10px;
 }
 
@@ -380,6 +382,12 @@ input[type=checkbox]{
 
     .checkout > h3{
         font-size: 13px;
+    }
+
+    .description_content{
+        height: fit-content;
+        position:static;
+        margin-bottom: 10px;
     }
 }
 
