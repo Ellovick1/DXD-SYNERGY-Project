@@ -33,11 +33,32 @@ main{
 
 nav{
     margin: auto;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
 }
 
 .synergy_logo {
     width: 5rem;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.description_content{
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.details_container{
+    gap: 1rem;
+}
+
+.details_container .items {
+    width: 100px;
+    height: 100px;
+}
+
+select{
+    height: 50px;
 }
 
 .signin_header{
@@ -49,6 +70,21 @@ nav{
 
 .nigeria_flag{
     width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: .5rem;
+}
+
+.promo_content > h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .promo_content > h5{
+        font-size: 12px;
+        font-weight: 700;
+    }
 }
 
 .join_section{
@@ -84,7 +120,7 @@ nav{
 
 .sign_up_with{
     /* text-align: ; */
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .sign_up_apps{
@@ -211,10 +247,10 @@ nav{
     background-color: white;
 }
 
-
+/* 
 form{
     margin: auto;
-}
+} */
 
 .contact_preferences{
     font-size: 12px;
@@ -265,16 +301,44 @@ input[type=checkbox]{
 }
 
 .start_shopping_button {
+    padding: 10px 5px;
+    border: none;
+    width: 80%;
+    background-color: rgb(45, 45, 45);
+
+}
+
+@media (max-width:768px) {
+    .start_shopping_button {
+        padding: 10px 5px;
+        border: none;
+        width: 100%;
+        font-size: 11px;
+        background-color: rgb(45, 45, 45);
+    
+    }
+}
+
+.start_shopping_button_muted {
     padding: 10px 0;
     border: none;
     width: 100%;
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(170,221,197);
 }
 
 .start_shopping_button a {
     color: white;
     font-weight: 700;
     text-decoration: none;
+}
+.start_shopping_button_muted a {
+    color: rgb(204,238,222);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.muted_input {
+    background-color: rgb(238,238,238);
 }
 
 /* footer */
@@ -291,7 +355,7 @@ input[type=checkbox]{
     text-decoration: underline;
     padding: 2px 5px;
     color: rgb(112, 112, 112);
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .terms_condition{
@@ -300,41 +364,22 @@ input[type=checkbox]{
 }
 
 .terms_condition a{
-    border-left: 1px solid silver;
-    text-decoration: underline;
-    padding: 2px 5px;
+    /* border-left: 1px solid silver; */
+    text-decoration: none;
+    padding: 10px 5px;
     color: rgb(112, 112, 112);
     font-size: 12px;
 }
 
 
+@media (max-width:768px) {
+    .synergy_logo {
+        width: 2rem;
+        /* margin: auto; */
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .checkout > h3{
+        font-size: 13px;
+    }
+}
 
