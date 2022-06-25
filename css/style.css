@@ -80,17 +80,17 @@ img {
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+    transition: all 0.5s;
+    height: 0;
+}
+
+.dropdown-contents:hover {
+    max-height: 200px; 
 }
 
 .dropdowns:hover .dropdown-contents {
     display: block;
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-
+    max-height: 200px; 
 
 }
 
