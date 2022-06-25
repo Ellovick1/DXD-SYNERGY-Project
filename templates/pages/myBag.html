@@ -16,8 +16,9 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="/css/myOrders.css"> -->
+    <link rel="stylesheet" href="/css/myBag.css">
     <link rel="shortcut icon" href="/images/DXD_synergy_logo.jpg" type="image/x-icon">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -41,14 +42,14 @@
             </ul>
         </div>
 
-       
+
 
         <!--************** MAIN NAVBAR SECTION***************** -->
 
         <nav class="main_navbar">
             <ul class="navbars">
                 <div class="navbrand_logo">
-                    <a class="fashion_category active" data-rel="#content-d" href="/index.html">
+                    <a class="fashion_category active" data-rel="#content-d" href="/templates/index.html">
                         <img src="/images/DXD_synergy_logo.jpg" alt="">
                     </a>
                 </div>
@@ -176,13 +177,13 @@
                 </li> -->
 
                 <li class="li_suitcase pr-3">
-                    <a href="/html/pages/shopping.html">
+                    <a href="/templates/pages/shopping.html">
                         <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
                     </a>
                 </li>
 
                 <li class="li_suitcase">
-                    <a href="/html/pages/myOrders.html">
+                    <a href="/templates/pages/myOrders.html">
                         <i class="fa fa-shopping-bag checkout_suitcase" aria-hidden="true"></i>
                         <!-- <img src="/images/suitcase.jpg" alt="" class="checkout_suitcase"> -->
                     </a>
@@ -194,7 +195,7 @@
 
         <!-- *****************SIDEBAR SECTION************************ -->
 
-        <div class="sidebar" id="home">
+        <div class="sidebar">
             <input type="checkbox" id="click">
             <label for="click" class="togglebar">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -203,24 +204,23 @@
 
             <ul>
                 <div class="toggle_button_container">
-                    <li class="li_women ">
+                    <li class="li_women">
                         <button class="button active" data-rel="#content-a"
-                            href="/sub_category/women.html">WOMEN
-                        </button>
+                            href="/sub_category/women.html">WOMEN</button>
                     </li>
                     <li class="li_men">
                         <button class="button" data-rel="#content-b" href="/sub_category/men.html">MEN</button>
                     </li>
-                   
+
                 </div>
-                
+
                 <div class="px-3">
-                    
+
                     <div class="container px-0 mt-2" id="content-a">
                         <li class="sidebar_home_image_women py-2">
-                            <a class="" href="/index.html">HOME</a>
+                            <a class="" href="/templates/index.html">HOME</a>
                         </li>
-                       
+
                         <li class="sales_discount">
                             <p class="pt-4 pl-3">
                                 SALE UP TO 70% <br> OFF
@@ -251,9 +251,9 @@
 
                     <div class="container px-0 mt-2" id="content-b">
                         <li class="sidebar_home_image_men py-2">
-                            <a class="" href="/index.html">HOME</a>
+                            <a class="" href="/templates/index.html">HOME</a>
                         </li>
-                       
+
                         <li class="sales_discount">
                             <p class="pt-4 pl-3">
                                 SALE UP TO 70% <br> OFF
@@ -290,41 +290,118 @@
 
         <!--********************** HERO SECTION   *************************** -->
 
-        <div id="content-d" class="category">
-            <div class="sub_category">
-                <ul>
-                    <!-- <li class="">
-                        <a class="fashion_category" data-rel="#content-e" href="/sub_category/women.html">WOMEN</a>
-                    </li> -->
+        <section>
+            <div class="row bag_container pt-5">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-between mb-2 bg-white p-2">
+                        <h5>MY BAG</h5>
+                        <p>Items are reserved for 60 minutes</p>
+                    </div>
 
-                    <li>
-                        <h4 href="">
-                            25% OFF EVERYTHING!* <br>
-                            <span>With code: WOO25</span>
-                        </h4>
-                    </li>
-                    <!-- <li>
-                        <a class="fashion_category" data-rel="#content-f" href="/sub_category/men.html">MEN</a>
-                    </li> -->
-                </ul>
-            </div>
+                    <div class="mb-2 bg-white p-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex bag_details">
+                                <div class="myBag_image"><img src="/images/black-sneakers1.jpg" alt=""></div>
+                                <div class="">
+                                    <h5>£13.00</h5>
+                                    <small>Synergy sneakers in grey</small>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <p class="pr-2">Grey</p>
+                                        <select name="" id="" class="w-100 h-25 border-top-0  border-bottom-0">
+                                            <option value="">S</option>
+                                        </select>
+                                        <select name="" id="" class="w-100 h-25 border-bottom-0 border-left-0 border-top-0">
+                                            <option value="">Qty 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="border px-2 py-2 save_for_later">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        Save for later
+                                    </div>
+                                </div>
+                            </div>
 
-            <section>
-                <div class="hero_section">
-                    <div class="text-center hero_section_header">
-                        <h1>This is DXD SYNERGY</h1>
-                        <p>DXD SYNERGY and 850+ brands</p>
-                        <div>
-                            <button class="fashion_category shop_women_button mb-3" data-rel="#content-e">SHOP WOMEN</button>
-                            <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP MEN</button>
+                            <div>
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="bottom_hero_section">
-                        <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
-                        <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
+
+                    <div class="d-flex justify-content-end sub_total mb-2 bg-white py-3 px-5">
+                        <h5>SUB-TOTAL</h5>
+                        <h5>£13.00</h5>
+
                     </div>
+
+                    <div class="mb-2 bg-white p-2">
+                        <a href="/templates/pages/delivery.html" class="d-flex delivery_container_a pl-3 text-decoration-none">
+                            <div>
+                                <i class="fa fa-truck fa-2x delivery_van" aria-hidden="true"></i>
+                            </div>
+                            <div class="standard_delivery">
+                                <h4 class="standard_delivery_h4">FREE* STANDARD DELIVERY</h4>
+                                <p>Faster delivery options available to most countries. <br>
+                                    <span class="more_info">More info</span>
+                                </p>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <div class="my-5">
+                        <h6 class="font-weight-bold">WONDERING WHERE YOUR ITEMS HAVE GONE?</h6>
+                        <hr>
+                        <p>No worries – you'll find them in your Saved Items.</p>
+                        <button class="see_similar">
+                            <a href="/templates/pages/saved-Items.html">VIEW ALL SAVED ITEMS</a>
+                        </button>
+                    </div>
+
                 </div>
-            </section>
+
+                <div class="col-md-4 p-4 bg-white checkout_container">
+                    <h4>TOTAL</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h5>Sub-total</h5>
+                        <p>£13.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5>Delivery</h5>
+                        <a href=""><i class="fa fa-exclamation-circle exclamation_icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <select name="" id="" class="border-top-0 border-left-0 border-right-0 mb-3 w-100 pb-2">
+                            <option value="">Standard Delivery (£16.00)</option>
+                        </select>
+                    </a>
+
+                    <button class="checkout_button"><a href="/templates/pages/checkout.html">CHECKOUT</a></button>
+
+                    <h5 class="we_accept mt-3">WE ACCEPT:</h5>
+                    <div class="icons_and_images">
+
+                        <ul class="electronic_images d-flex">
+                            <li class="checkout_visa"><img src="https://images.asos-media.com/navigation/visa-png" alt="">
+                            </li>
+                            <li class="checkout_mastercard"><img
+                                    src="https://images.asos-media.com/navigation/mastercard-png" alt="">
+                            </li>
+                            <li class="checkout_pay-pal"><img src="https://images.asos-media.com/navigation/pay-pal-png"
+                                    alt="">
+                            </li>
+                            <li class="checkout_american-express"><img
+                                    src="https://images.asos-media.com/navigation/american-express-png" alt=""></li>
+                            <li class="visa-electron_image"><img
+                                    src="https://images.asos-media.com/navigation/visa-electron-png" alt=""></li>
+                        </ul>
+                    </div>
+                    <p class="mt-3 got_discount_p">Got a discount code? Add it in the next step.</p>
+                </div>
+
+            </div>
+        </section>
 
         </div>
 
@@ -334,16 +411,16 @@
             <div class="outlet_discount_women">
                 <h2>OUTLET</h2>
                 <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
+                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF
                 </h3>
                 <h6>With code: STYLES </h6>
                 <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
             </div>
-    
+
             <div class="hero_section_image_women">
                 <img src="/images/topwoman_image.jpg" alt="">
             </div>
-    
+
             <div class="topwomen_images_clothing">
                 <div>
                     <div class="">
@@ -356,34 +433,34 @@
                     <div>
                         <img src="/images/topwomen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
                 <div>
                     <div>
                         <img src="/images/topwomen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
                 <div>
                     <div>
                         <img src="/images/topwomen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
             </div>
-    
+
             <div class="outlet_discount_women">
                 <h2>OUTLET</h2>
                 <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
+                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF
                 </h3>
                 <h6>With code: STYLES </h6>
                 <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
             </div>
-    
+
             <div class="topwomen_images_clothing2">
                 <div>
                     <div class="">
@@ -397,58 +474,64 @@
                     <div>
                         <img src="/images/topwomen_img.jpg" alt="">
                     </div>
-                     <h6>DELIGHT SUMMER</h6>
-                     <p>Laid back looks</p>
-                     <button>DXD SYNERGY DESIGN</button>
+                    <h6>DELIGHT SUMMER</h6>
+                    <p>Laid back looks</p>
+                    <button>DXD SYNERGY DESIGN</button>
                 </div>
-               
+
             </div>
-    
+
             <!-- ******** TRENDING BRANDS WOMEN SECTION ******* -->
 
             <div class="trending_brands_women_section">
                 <h1>TRENDING BRANDS</h1>
-               <div class="brand_logos_women">
-                <div class="brand_logos_image_women">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
+                <div class="brand_logos_women">
+                    <div class="brand_logos_image_women">
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div class="brand_logos_image_women">
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
                 </div>
-                <div class="brand_logos_image_women">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-               </div>
             </div>
         </div>
 
 
 
-            <!--******************* MEN FASHION SECTION *************************** -->
-        
+        <!--******************* MEN FASHION SECTION *************************** -->
+
         <div id="content-f" class="category">
             <div class="outlet_discount">
                 <h2>OUTLET</h2>
                 <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
+                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF
                 </h3>
-                <h6>With code: STYLES  </h6>
+                <h6>With code: STYLES </h6>
                 <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
             </div>
-    
+
             <div class="hero_section_image mb-3">
                 <img src="/images/topman_image.jpg" alt="">
             </div>
-    
+
             <div class="topmen_images_clothing">
                 <div>
                     <div class="">
@@ -461,34 +544,34 @@
                     <div>
                         <img src="/images/topmen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
                 <div>
                     <div>
                         <img src="/images/topmen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
                 <div>
                     <div>
                         <img src="/images/topmen_img.jpg" alt="">
                     </div>
-                     <h6>ADIDAS ORIGINAL</h6>
+                    <h6>ADIDAS ORIGINAL</h6>
                     <p>3 stripes and you're in</p>
                 </div>
             </div>
-    
+
             <div class="outlet_discount">
                 <h2>OUTLET</h2>
                 <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
+                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF
                 </h3>
-                <h6>With code: STYLES  </h6>
+                <h6>With code: STYLES </h6>
                 <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
             </div>
-    
+
             <div class="topmen_images_clothing2">
                 <div>
                     <div class="">
@@ -502,37 +585,43 @@
                     <div>
                         <img src="/images/topmen_img.jpg" alt="">
                     </div>
-                     <h6>DELIGHT SUMMER</h6>
-                     <p>Laid back looks</p>
-                     <button>DXD SYNERGY DESIGN</button>
+                    <h6>DELIGHT SUMMER</h6>
+                    <p>Laid back looks</p>
+                    <button>DXD SYNERGY DESIGN</button>
                 </div>
-               
+
             </div>
 
             <!-- /* TRENDING BRANDS SECTION MEN*/ -->
 
             <div class="trending_brands_section">
                 <h1>TRENDING BRANDS</h1>
-               <div class="brand_logos">
-                <div class="brand_logos_image">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
+                <div class="brand_logos">
+                    <div class="brand_logos_image">
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"
+                            alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-               </div>
             </div>
         </div>
 
@@ -551,8 +640,8 @@
                     <li class="mastercard_image"><img src="https://images.asos-media.com/navigation/mastercard-png"
                             alt="">
                     </li>
-                    <li class="pay-pal_image"><img src="https://images.asos-media.com/navigation/pay-pal-png"
-                            alt=""></li>
+                    <li class="pay-pal_image"><img src="https://images.asos-media.com/navigation/pay-pal-png" alt="">
+                    </li>
                     <li class="american-express_image"><img
                             src="https://images.asos-media.com/navigation/american-express-png" alt=""></li>
                     <li class="visa-electron_image"><img
