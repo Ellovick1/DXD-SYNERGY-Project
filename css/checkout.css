@@ -310,6 +310,56 @@ input[type=checkbox]{
 
 }
 
+
+
+/* ***************** */
+.myBag_image{
+    height: 100px;
+    /* width: 150px; */
+}
+
+.bag_details{
+    gap: 2rem;
+}
+
+.save_for_later{
+    font-size: 10px;
+}
+
+
+.we_accept{
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+div ul li {
+    list-style-type: none;
+}
+
+.visa-electron_image2,
+.checkout_visa,
+.checkout_mastercard,
+.checkout_pay-pal,
+.checkout_american-express{
+    height: 20px;
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.got_discount_p{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width:768px) {
     .start_shopping_button {
         padding: 10px 5px;

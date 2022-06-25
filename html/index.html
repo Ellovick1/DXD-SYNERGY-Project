@@ -16,10 +16,8 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/saved-Items.css">
-    <link rel="shortcut icon" href="/images/DXD_synergy_logo.jpg" type="image/x-icon">
-
     <!-- <link rel="stylesheet" href="/css/myOrders.css"> -->
+    <link rel="shortcut icon" href="/images/DXD_synergy_logo.jpg" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -178,13 +176,13 @@
                 </li> -->
 
                 <li class="li_suitcase pr-3">
-                    <a href="/pages/shopping.html">
+                    <a href="/html/pages/shopping.html">
                         <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
                     </a>
                 </li>
 
                 <li class="li_suitcase">
-                    <a href="/pages/myOrders.html">
+                    <a href="/html/pages/myOrders.html">
                         <i class="fa fa-shopping-bag checkout_suitcase" aria-hidden="true"></i>
                         <!-- <img src="/images/suitcase.jpg" alt="" class="checkout_suitcase"> -->
                     </a>
@@ -196,7 +194,7 @@
 
         <!-- *****************SIDEBAR SECTION************************ -->
 
-        <div class="sidebar">
+        <div class="sidebar" id="home">
             <input type="checkbox" id="click">
             <label for="click" class="togglebar">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -205,9 +203,10 @@
 
             <ul>
                 <div class="toggle_button_container">
-                    <li class="li_women">
+                    <li class="li_women ">
                         <button class="button active" data-rel="#content-a"
-                            href="/sub_category/women.html">WOMEN</button>
+                            href="/sub_category/women.html">WOMEN
+                        </button>
                     </li>
                     <li class="li_men">
                         <button class="button" data-rel="#content-b" href="/sub_category/men.html">MEN</button>
@@ -292,92 +291,38 @@
         <!--********************** HERO SECTION   *************************** -->
 
         <div id="content-d" class="category">
-            <nav class="sub_category">
+            <div class="sub_category">
                 <ul>
                     <!-- <li class="">
                         <a class="fashion_category" data-rel="#content-e" href="/sub_category/women.html">WOMEN</a>
                     </li> -->
 
                     <li>
-                        <h5 href="">
+                        <h4 href="">
                             25% OFF EVERYTHING!* <br>
                             <span>With code: WOO25</span>
-                        </h6>
+                        </h4>
                     </li>
                     <!-- <li>
                         <a class="fashion_category" data-rel="#content-f" href="/sub_category/men.html">MEN</a>
                     </li> -->
                 </ul>
-            </nav>
+            </div>
 
             <section>
-                <div class="position-relative">
-                    <div class="text-center bg-light py-3">
-                        <h4>Saved Items</h4>
+                <div class="hero_section">
+                    <div class="text-center hero_section_header">
+                        <h1>This is DXD SYNERGY</h1>
+                        <p>DXD SYNERGY and 850+ brands</p>
+                        <div>
+                            <button class="fashion_category shop_women_button mb-3" data-rel="#content-e">SHOP WOMEN</button>
+                            <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP MEN</button>
+                        </div>
                     </div>
-
-                    <div class="bg-white py-3 px-3">
-                       <div class="d-flex justify-content-between place-items-center">
-                        <select name="" id="" class="border-0 font-weight-bold">
-                            <option value="">Recently added</option>
-                            <option value="">Sort by</option>
-                        </select>
-                        <p class="mb-0">2 Items</p>
-                       </div>
-
-                       <div class="overflow-auto">
-                            <table class="saved_items_container mt-2">
-                                    <tr>
-                                        <td class="p-3">
-                                                <div class="w-100 h-100 position-relative">
-                                                    <div class="image_content"> <img src="/images/black-sneakers2.jpg" alt=""></div>
-                                                    <i class="fa fa-trash bg-white position-absolute right-0 p-2 rounded-circle" aria-hidden="true"></i>
-                                                    <p class="mb-0 w-100 text-center position-absolute font-weight-bold">Out of Stock</p>
-                                                </div>
-
-                                            <p class="mt-2">Sneakers in black color</p>
-                                            <h6>£89.00</h6>
-                                            <hr>
-                                            <p class="text-muted">Black - out of stock</p>
-                                            <hr>
-                                            <select name="" id="" class="border-0 w-100 text-muted">
-                                                <option value="">Select size</option>
-                                            </select>
-                                            <button class="see_similar">
-                                                <a href="">SEE SIMILAR</a>
-                                            </button>
-    
-                                        </td>
-                                       
-                                        <td class="p-3">
-                                            <div class="w-100 h-100 position-relative">
-                                               <div class="image_content"> <img src="/images/black-sneakers2.jpg" alt=""></div>
-                                                <i class="fa fa-trash bg-white position-absolute right-0 p-2 rounded-circle" aria-hidden="true"></i>
-                                            </div>
-                                                <p class="mt-2">Sneakers in black color</p>
-                                            <h6>£89.00</h6>
-                                            <hr>
-                                            <p class="text-muted">Black</p>
-                                            <hr>
-                                            <select name="" id="" class="border-0 w-100">
-                                                <option value="">Select size</option>
-                                            </select>
-                                            <button class="move_to_bag_button">
-                                                <a href="">MOVE TO BAG</a>
-                                            </button>
-    
-                                        </td>
-                                    </tr>
-
-                                </table>
-                       </div>
-
-                    </div>
-
-                    <!-- <div class="bg-dark bottom_hero_section text-white">
+                    <div class="bottom_hero_section">
                         <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
                         <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
-                    </div> -->
+                    </div>
                 </div>
             </section>
 
@@ -691,7 +636,7 @@
         crossorigin="anonymous"></script>
 
     <!-- JAVASCRIPT LINK -->
-    <script src="/main.js"></script>
+    <script src="/js/main.js"></script>
     <!-- <script async src="//jsfiddle.net/wyEq7/embed/"></script> -->
 
 </body>
