@@ -150,7 +150,7 @@ small {
 .filters_container {
     position: sticky;
     top: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .clear_all_button {
@@ -275,6 +275,11 @@ small {
     .might_like_h5 {
         margin-left: 0;
     }
+
+    
+.filters_container {
+    z-index: 1;
+}
 }
 
 @media (max-width:500px) {
