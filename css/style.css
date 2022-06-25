@@ -49,10 +49,66 @@ img {
 
 /* ***Dropdown */
 
+.dropdown-contents{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 3rem;
+    height: 12px;
+  }
+  .dropdown-contents .rows{
+    list-style:none;
+    background: white;
+    width:100%;
+    padding: 0 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* height: 30px; */
+    line-height: 20px;
+    transition: all 1s ease-in-out;
+    
+  }
+  
+  .dropdown-contents .rows{
+    
+    transform-origin: top;
+    transform: perspective(350px) rotateX(-90deg);
+  }
+  
+  
+  .dropdowns:hover .rows{
+    transform-origin: top;
+    transform: perspective(350px) rotateX(0deg);
+    margin-top:0;
+  }
+  
+  
+  .dropdown-contents .rows{
+    margin-top:0;
+  }
+  
+  .dropdowns{
+    /* position:relative; */
+    height: fit-content;
+    /* width:100%; */
+    /* background: green; */
+    color: white;
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight:bold;
+    text-align: center;
+    /* line-height: 40px; */
+    list-style:none;
+    z-index:2;
+    
+  }
 
-.dropdowns {
-    overflow: hidden;
-}
+
+/* .dropdowns { */
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* top: 5rem; */
+/* } */
 
 .dropdowns .dropbtns {
     font-size: 16px;
@@ -65,34 +121,6 @@ img {
 
 }
 
-/* 
-.navbars a:hover,
-.dropdowns:hover .dropbtns {
-    /* background-color: red; 
-} */
-
-.dropdown-contents {
-    display: none;
-    position: absolute;
-    top: 5rem;
-    background-color: white;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transition: all 0.5s;
-    height: 0;
-}
-
-.dropdown-contents:hover {
-    max-height: 200px; 
-}
-
-.dropdowns:hover .dropdown-contents {
-    display: block;
-    max-height: 200px; 
-
-}
 
 .columns {
     float: left;
@@ -100,7 +128,8 @@ img {
     padding: 10px;
     background-color: white;
     color: black;
-    height: 250px;
+    text-align: left;
+    /* height: 250px; */
 }
 
 .columns>h5 {
@@ -143,7 +172,6 @@ img {
 .main_navbar {
     background-color: black;
     color: white;
-    padding: 0px 30px;
     width: 100%;
     height: fit-content;
     /* display: flex; */
@@ -154,7 +182,7 @@ img {
 .navbrand_logo {
     display: flex;
     align-items: center;
-    border-right: 1px solid silver;
+    /* border-right: 1px solid silver; */
     padding: 0 20px;
 }
 
@@ -170,13 +198,24 @@ img {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    /* align-items: center; */
+    align-items: center;
+    position: relative;
+    padding: 0 30px;
 }
 
-.main_navbar .men_section,
+.main_navbar
 .women_section {
     padding: 0 20px;
     border-right: 1px solid silver;
+    border-left: 1px solid silver;
+    display: flex;
+    align-items: center;
+}
+
+.main_navbar  .men_section {
+    padding: 0 20px;
+    border-right: 1px solid silver;
+    /* border-left: 1px solid silver; */
     display: flex;
     align-items: center;
 }
@@ -1069,6 +1108,9 @@ footer .visa_image,
         align-items: center;
     }
 
+    .main_navbar .women_section {
+        display: none;
+    }
     .copyright {
         text-align: center;
     }
