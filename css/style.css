@@ -51,15 +51,16 @@ img {
 
 .dropdown-contents{
     position: absolute;
-    z-index: 1;
+    /* z-index: 1; */
     width: 100%;
     left: 0;
-    top: 4rem;
+    top: 2rem;
     height: 5px;
+    padding-top: 2rem;
   }
   .dropdown-contents .rows{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     list-style:none;
     background: white;
@@ -68,8 +69,8 @@ img {
     padding-left: 3rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     /* height: 30px; */
-    line-height: 40px;
-    transition: all 1s ease-in-out;
+    line-height: 20px;
+    /* transition: all .1s ease-in; */
     
   }
   
@@ -77,12 +78,13 @@ img {
     
     transform-origin: top;
     transform: perspective(350px) rotateX(-90deg);
-  }
-  
-  
-  .dropdowns:hover .rows{
+}
+
+
+.dropdowns:hover .rows{
     transform-origin: top;
     transform: perspective(350px) rotateX(0deg);
+    /* transform: perspective(300px) rotateX(-90deg); */
     margin-top:0;
   }
   
@@ -99,7 +101,7 @@ img {
     color: white;
     font-size: 13px;
     font-family: Helvetica;
-    font-weight:bold;
+    /* font-weight:bold; */
     text-align: center;
     /* line-height: 40px; */
     list-style:none;
@@ -134,12 +136,12 @@ img {
 .columns {
     float: left;
     /* width: 33.33%; */
-    width: 30%;
+    width: 22%;
     /* margin: auto; */
     padding: 10px;
     padding-top: 3rem;
     background-color: white;
-    color: black;
+    /* color: black; */
     text-align: left;
     /* height: 250px; */
 }
@@ -150,10 +152,31 @@ img {
     border-bottom: 2px solid black;
 }
 
+.columns>h5 > a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: rgba(2, 24, 24);
+    font-size: 17px;
+    /* font-weight: 700; */
+    /* border-bottom: 2px solid black; */
+}
+
+.columns> p > a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* color: rgba(2, 24, 24); */
+    color:  rgb(88, 88, 88);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: FFDINforPuma, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* border-bottom: 2px solid black; */
+}
+
 .columns>a {
     float: none;
-    color: black;
+    color: rgb(148, 148, 148);
     padding: 5px;
+    font-size: 15px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -161,6 +184,8 @@ img {
 
 .columns a:hover {
     background-color: white;
+    color: rgb(138,115,80);
+
 
 }
 
