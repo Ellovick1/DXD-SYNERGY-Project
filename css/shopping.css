@@ -58,6 +58,10 @@ section > div > div {
     height: 600px;
 }
 
+.side_image_container{
+    display: flex;
+}
+
 .adidas_original{
     font-size: 20px;
     margin-top: 20px;
@@ -66,6 +70,14 @@ section > div > div {
 .pounds{
     font-weight: 700;
     font-size: 25px;
+}
+
+.select_filters{
+    display: flex;
+}
+
+.filters{
+    display: none;
 }
 
 .please_select {
@@ -294,6 +306,14 @@ small {
         background-color: #f9f9f9;
     
     }
+
+    .select_filters{
+        display: none;
+    }
+
+    .filters{
+        display: flex;
+    }
 }
 
 @media (max-width:768px) {
@@ -309,11 +329,7 @@ small {
         font-size: 8px;
         background-color: rgb(1,136,73);
     }
-    
 
-    .select_filters{
-        display: none;
-    }
 
     .side_image_container{
         display: none;
