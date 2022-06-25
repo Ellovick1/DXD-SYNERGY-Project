@@ -45,17 +45,96 @@
         <!--************** MAIN NAVBAR SECTION***************** -->
 
         <nav class="main_navbar">
-            <ul>
+            <ul class="navbars">
                 <div class="navbrand_logo">
                     <a class="fashion_category active" data-rel="#content-d" href="/index.html">
                         <img src="/images/DXD_synergy_logo.jpg" alt="">
                     </a>
                 </div>
 
-                <li class="women_section"><a class="fashion_category" data-rel="#content-e"
-                        href="/sub_category/women.html">WOMEN</a></li>
-                <li class="men_section"><a class="fashion_category" data-rel="#content-f"
-                        href="/sub_category/men.html">MEN</a></li>
+                <li class="women_section dropdowns">
+                    
+                    <a class="fashion_category dropbtns" data-rel="#content-e"
+                        href="/sub_category/women.html">WOMEN
+                    </a>
+
+                    
+                    <div class="dropdown-contents">
+                        <!-- <div class="headers">
+                          <h2>Mega Menu</h2>
+                        </div>    -->
+                        <div class="rows">
+                          <div class="columns">
+                            <h5>Shoes</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                          <div class="columns">
+                            <h5>Clothing</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                          <div class="columns">
+                            <h5>Accessories</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </li>
+
+                <li class="men_section dropdowns">
+                    <a class="fashion_category dropbtns" data-rel="#content-f"
+                        href="/sub_category/men.html">MEN
+                    </a>
+
+                    <div class="dropdown-contents">
+                        <!-- <div class="headers">
+                          <h2>Mega Menu</h2>
+                        </div>    -->
+                        <div class="rows">
+                          <div class="columns">
+                            <h5>Shoes</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                          <div class="columns">
+                            <h5>Clothing</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                          <div class="columns">
+                            <h5>Accessories</h5>
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                    </li>
                
                 <form action="" class="py-2 form1">
                     <div class="form-group input_field_area mb-0">
@@ -65,9 +144,15 @@
                     </div>
                 </form>
 
-                <li class="li_user_icon">
+                <!-- <li class="li_user_icon">
                     <a href="/pages/myAccount.html" class="empty_face">
                         <i class="fa fa-user user_icon" aria-hidden="true"></i>
+                    </a>
+                </li> -->
+
+                <li class="li_suitcase pr-3">
+                    <a href="">
+                        <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
                     </a>
                 </li>
 
@@ -93,9 +178,10 @@
 
             <ul>
                 <div class="toggle_button_container">
-                    <li class="li_women">
+                    <li class="li_women ">
                         <button class="button active" data-rel="#content-a"
-                            href="/sub_category/women.html">WOMEN</button>
+                            href="/sub_category/women.html">WOMEN
+                        </button>
                     </li>
                     <li class="li_men">
                         <button class="button" data-rel="#content-b" href="/sub_category/men.html">MEN</button>
@@ -182,9 +268,9 @@
         <div id="content-d" class="category">
             <nav class="sub_category">
                 <ul>
-                    <li class="">
+                    <!-- <li class="">
                         <a class="fashion_category" data-rel="#content-e" href="/sub_category/women.html">WOMEN</a>
-                    </li>
+                    </li> -->
 
                     <li>
                         <h5 href="">
@@ -192,9 +278,9 @@
                             <span>With code: WOO25</span>
                         </h6>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="fashion_category" data-rel="#content-f" href="/sub_category/men.html">MEN</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -208,7 +294,7 @@
                             <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP MEN</button>
                         </div>
                     </div>
-                    <div class="bg-dark bottom_hero_section">
+                    <div class="bottom_hero_section">
                         <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
                         <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
                     </div>
