@@ -161,12 +161,12 @@ img {
     /* border-bottom: 2px solid black; */
 }
 
-.columns> p > a {
+.columns> h6 > a {
     padding-bottom: 10px;
     text-decoration: none;
     /* color: rgba(2, 24, 24); */
-    color:  rgb(88, 88, 88);
-    font-size: 15px;
+    color:  rgb(75, 75, 75);
+    font-size: 17px;
     font-weight: 600;
     font-family: FFDINforPuma, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     /* border-bottom: 2px solid black; */
@@ -174,7 +174,7 @@ img {
 
 .columns>a {
     float: none;
-    color: rgb(148, 148, 148);
+    color: rgb(124, 124, 124);
     padding: 5px;
     font-size: 15px;
     text-decoration: none;
