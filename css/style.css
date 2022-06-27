@@ -47,106 +47,71 @@ img {
 
 /******* MAIN NAVBAR **************/
 
-/* ***Dropdown */
 
-.dropdown-contents{
-    position: absolute;
-    /* z-index: 1; */
-    width: 100%;
-    left: 0;
-    top: 2rem;
-    height: 5px;
-    padding-top: 2rem;
-  }
-  .dropdown-contents .rows{
-    display: flex;
-    justify-content: center;
-
-    list-style:none;
-    background: white;
-    width:100%;
-    padding: 0 5px;
-    padding-left: 3rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* height: 30px; */
-    line-height: 20px;
-    /* transition: all .1s ease-in; */
-    
-  }
+/* .dropdowns {
+    float: left;
+    overflow: hidden;
+  } */
   
-  .dropdown-contents .rows{
-    
-    transform-origin: top;
-    transform: perspective(350px) rotateX(-90deg);
-}
-
-
-.dropdowns:hover .rows{
-    transform-origin: top;
-    transform: perspective(350px) rotateX(0deg);
-    /* transform: perspective(300px) rotateX(-90deg); */
-    margin-top:0;
-  }
-  
-  
-  .dropdown-contents .rows{
-    margin-top: 0;
-  }
-  
-  .dropdowns{
-    /* position:relative; */
-    height: fit-content;
-    /* width:100%; */
-    /* background: green; */
+  .dropdowns .dropbtns {
     color: white;
-    font-size: 13px;
-    font-family: Helvetica;
-    /* font-weight:bold; */
-    text-align: center;
-    /* line-height: 40px; */
-    list-style:none;
-    z-index:2;
-    
-  }
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
 
-
-/* .dropdowns { */
-    /* overflow: hidden; */
-    /* width: 100%; */
-    /* top: 5rem; */
-/* } */
-
-.dropdowns .dropbtns {
-    font-size: 16px;
+    font-size: 16px;  
     border: none;
-    outline: none;
     color: white;
-    /* padding: 14px 16px; */
+    padding: 5px 5px;
     background-color: inherit;
+    /* font: inherit; */
     margin: 0;
-    z-index: 1;
+    outline: none;
+  }
 
-}
-
-.dropbtns:hover {
+  .dropbtns:hover {
     border-bottom: 2px solid rgb(138,115,80);
 }
 
-
-.columns {
+.dropdowns:hover .dropbtns {
+      border-bottom: 2px solid rgb(138,115,80);
+  }
+  
+  .dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    top: 4.3rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-contents .rows {
+    background: white;
+    padding-top: 2.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdowns:hover .dropdown-contents {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .columns {
     float: left;
     /* width: 33.33%; */
-    width: 22%;
+    width: 19%;
     /* margin: auto; */
     padding: 10px;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     background-color: white;
-    /* color: black; */
-    text-align: left;
-    /* height: 250px; */
-}
-
-.columns>h5 {
+  }
+  
+  .columns>h5 {
     padding-bottom: 10px;
     font-weight: 700;
     border-bottom: 2px solid black;
@@ -160,6 +125,7 @@ img {
     /* font-weight: 700; */
     /* border-bottom: 2px solid black; */
 }
+
 
 .columns> h6 > a {
     padding-bottom: 10px;
@@ -181,28 +147,30 @@ img {
     display: block;
     text-align: left;
 }
-
 .columns a:hover {
     background-color: white;
     color: rgb(138,115,80);
 
 
 }
-
-/* Clear floats after the columns */
-.rows:after {
+  
+  /* Clear floats after the columns */
+  .rows:after {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
     .columns {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
-}
+  }
+  
+
+/* ***Dropdown */
 
 /* **Dropdown ends */
 
@@ -249,6 +217,9 @@ img {
     border-left: 1px solid silver;
     display: flex;
     align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 
 .main_navbar  .men_section {
@@ -258,6 +229,8 @@ img {
     /* border-left: 1px solid silver; */
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 
 ul {
@@ -418,7 +391,7 @@ li .btn2 {
         border: none;
         align-items: center;
         /* position: fixed; */
-        top: .5rem;
+        top: .9rem;
         width: 5px;
         z-index: 1;
 
