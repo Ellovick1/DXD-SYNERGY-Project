@@ -32,7 +32,7 @@ section > div > div {
 }
 
 .carousel-inner{
-    min-height: 35rem;
+    min-height: 10rem;
     background-color: #f9f9f9;
 
 }
@@ -40,7 +40,7 @@ section > div > div {
 .carousel-item {
     text-align: center;
     position: absolute;
-    bottom: 7rem;
+    bottom: 0rem;
     /* min-height: 280px; */
 }
 
@@ -121,7 +121,7 @@ section > div > div {
 .might_like_sub-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
 
 }
 
@@ -138,7 +138,7 @@ section > div > div {
 }
 
 small {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     display: block;
     width: 95%;
 }
@@ -150,6 +150,7 @@ small {
 .filters_container {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .clear_all_button {
@@ -212,6 +213,14 @@ small {
 
 /* ****************MEDIA QUERY******************* */
 
+@media (max-width: 1024px) {
+    .carousel-inner{
+        min-height: 7rem;
+        background-color: #f9f9f9;
+    
+    }
+}
+
 @media (max-width:768px) {
 
     .add_to_bag{
@@ -222,7 +231,7 @@ small {
         color: white;
         font-weight: 700;
         width: 90%;
-        font-size: 9px;
+        font-size: 8px;
         background-color: rgb(1,136,73);
     }
     
@@ -248,7 +257,7 @@ small {
     .might_like_sub-container {
         display: grid;
         justify-content: unset;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .viewed_section {
@@ -268,23 +277,45 @@ small {
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:500px) {
+    .carousel-inner{
+        min-height: 5rem;
+        background-color: #f9f9f9;
+    
+    }
+
     .might_like_sub-container {
         display: grid;
         justify-content: unset;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .recently_viewed_h5{
         font-size: 12px;
     }
+
+    .might_like_details > div >h6,
+    .might_like_details > div >p {
+        font-size: 9px;
+    }
+    
+    .might_like_details:last-child {
+        font-size: 9px;
+
+    }
+
+    small {
+      font-size: 9px;
+    }
 }
 
-@media (max-width: 320px) {
+
+
+@media (max-width: 375px) {
     .might_like_sub-container {
         display: grid;
         justify-content: unset;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
