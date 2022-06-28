@@ -150,7 +150,7 @@ small {
 .filters_container {
     position: sticky;
     top: 0;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .clear_all_button {
@@ -205,6 +205,81 @@ small {
     font-weight: 700;
     background-color: white;
 }
+
+
+/* custom select button */
+
+.dropdown-toggle {
+    width: 7rem;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 2px solid silver;
+    font-weight: 600;
+}
+
+.dropdown-toggle:focus {
+
+    box-shadow: none !important;
+
+}
+
+
+.dropdown-toggle::after {
+
+    display: none;
+
+}
+
+.dropdown-menu {
+
+    width: fit-content;
+    border: 2px solid silver;
+    padding: 0rem 0;
+    transform: translate3d(0px, 50px, 0px) !important;
+
+}
+
+.dropdown_size {
+    width: 23rem;
+}
+
+.dropdown_size>li {
+    margin: 5px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #ffffff;
+    background-color: unset;
+    padding: 12px;
+}
+
+.dropdown-item {
+    /* display: block; */
+    width: 100%;
+    padding: 12px;
+
+}
+
+.dropdown_colors_container {
+    width: 23rem;
+}
+.dropdown_colors_container  > li{
+    margin: 10px;
+}
+
+.dropdown_colors {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* custom select button  ends here*/
+
 
 
 
