@@ -178,13 +178,13 @@
                 </li> -->
 
                 <li class="li_suitcase pr-3">
-                    <a href="/pages/shopping.html">
+                    <a href="/html/pages/shopping.html">
                         <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
                     </a>
                 </li>
 
                 <li class="li_suitcase">
-                    <a href="/pages/myOrders.html">
+                    <a href="/html/pages/myOrders.html">
                         <i class="fa fa-shopping-bag checkout_suitcase" aria-hidden="true"></i>
                         <!-- <img src="/images/suitcase.jpg" alt="" class="checkout_suitcase"> -->
                     </a>
@@ -1196,53 +1196,7 @@
     </main>
 
 
-    <script>
-        function toggleText() {
-
-            // Get all the elements from the page
-            var points =
-                document.getElementById("points");
-
-            var showMoreText =
-                document.getElementById("moreText");
-
-            var buttonText =
-                document.getElementById("textButton");
-
-            // If the display property of the dots 
-            // to be displayed is already set to 
-            // 'none' (that is hidden) then this 
-            // section of code triggers
-            if (points.style.display === "none") {
-
-                // Hide the text between the span
-                // elements
-                showMoreText.style.display = "none";
-
-                // Show the dots after the text
-                points.style.display = "inline";
-
-                // Change the text on button to 
-                // 'Show More'
-                buttonText.innerHTML = "Show More";
-            }
-
-            // If the hidden portion is revealed,
-            // we will change it back to be hidden
-            else {
-
-                // Show the text between the
-                // span elements
-                showMoreText.style.display = "inline";
-
-                // Hide the dots after the text
-                points.style.display = "none";
-
-                // Change the text on button
-                // to 'Show Less'
-                buttonText.innerHTML = "Show Less";
-            }
-        };
+    <!-- <script>
 
 
 
@@ -1294,7 +1248,7 @@
             });
         });
 
-    </script>
+    </script> -->
 
 
 
@@ -1318,7 +1272,8 @@
         crossorigin="anonymous"></script>
 
     <!-- JAVASCRIPT LINK -->
-    <script src="/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/shopping.js"></script>
     <!-- <script async src="//jsfiddle.net/wyEq7/embed/"></script> -->
 
 </body>
