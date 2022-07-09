@@ -264,7 +264,7 @@ small {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #ffffff;
+    /* color: #ffffff; */
     background-color: unset;
     padding: 12px;
 }
