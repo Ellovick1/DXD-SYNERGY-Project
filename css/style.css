@@ -352,7 +352,13 @@ form {
     overflow: auto;
 }
 
-
+@media (max-width: 768px) {
+    .w3-sidebar {
+        width: 80% !important;
+       
+    }
+    
+}
 
 
 /* *************************************** */
