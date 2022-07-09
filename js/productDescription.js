@@ -35,3 +35,21 @@
             });
         });
 
+
+
+        // *************************SWEET ALERT****************************************//
+        
+
+        document.querySelector(".first").addEventListener('click', function (event){
+            event.preventDefault();
+            swal({
+                title: "Success!",
+                text: "Succesfully added item to cart",
+                type: "success",
+                timer: 2000,
+                showConfirmButton: false
+              }, function(){
+                    window.location.href = "/pages/checkout.html";
+              })
+        });
+

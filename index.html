@@ -21,6 +21,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 </head>
 
 <body>
@@ -176,7 +179,9 @@
                 </li> -->
 
                 <li class="li_suitcase pr-3">
+                    <!-- <div class="" id="countdown">hello</div> -->
                     <a href="/pages/shopping.html">
+                        <div class="row  bg-danger justify-content-center border rounded-pill" id="countdown"></div>
                         <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -191,8 +196,11 @@
 
         </nav>
 
-
-        <!-- *****************SIDEBAR SECTION************************ -->
+            <!-- ************************************************************* -->
+            <!-- ************************************************************* -->
+            <!-- *****************SIDEBAR SECTION MODIFY STARTS************************ -->
+            <!-- ************************************************************* -->
+            <!-- ************************************************************* -->
 
         <div class="sidebar" id="home">
             <input type="checkbox" id="click">
@@ -214,11 +222,11 @@
                    
                 </div>
                 
-                <div class="px-3">
+                <div class="px-3 position-relative side-bar_columns">
                     
-                    <div class="container px-0 mt-2" id="content-a">
-                        <li class="sidebar_home_image_women py-2">
-                            <a class="" href="/index.html">HOME</a>
+                    <div class="container sub_columns  px-0 mt-2 pb-2 position-absolute d-block overflow-x-hidden  overflow-y-scroll" id="content-a">
+                        <li class="side-bar-columns py-1 mt-2">
+                            <a class="text-dark font-weight-bold" href="/index.html">HOME</a>
                         </li>
                        
                         <li class="sales_discount">
@@ -226,32 +234,73 @@
                                 SALE UP TO 70% <br> OFF
                             </p>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>NEW IN</p>
+                      
+                        <li class="bg-light py-1  mt-2">
+
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+                                <button onclick="w1_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Clothing</button>
+                                <a href="#" class="w3-bar-item w3-button text-dark">item1</a>
+                              </div>
+                              
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w1_open()">Clothing </button>
+                                <i onclick="w1_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                              
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>CLOTHING</p>
+
+                        <li class="bg-light py-1 mt-2">
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar2">
+                                <button onclick="w2_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Shoe</button>
+                                <a href="#" class="w3-bar-item w3-button text-danger">item1</a>
+                                <a href="#" class="w3-bar-item w3-button">item2</a>
+                                <a href="#" class="w3-bar-item w3-button">item3</a>
+                              </div>
+                              
+                              <!-- Page Content -->
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w2_open()">Shoes</button>
+                                <i onclick="w2_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                <!-- <div class="w3-container">
+                                  <h1>My Page</h1>
+                                </div> -->
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>DRESSES</p>
+                        <li class="bg-light py-1 mt-2">
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar3">
+                                <button onclick="w3_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Acessories</button>
+                                <a href="#" class="w3-bar-item w3-button text-dark">item1</a>
+                                <a href="#" class="w3-bar-item w3-button">item2</a>
+                                <a href="#" class="w3-bar-item w3-button">item3</a>
+                              </div>
+                              
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w3_open()">Accessories</button>
+                                <i onclick="w3_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>SHOES</p>
+
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">New Arrivals</a>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>SPORTWEARS</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Best Sellers</a>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>ACCESSORIES</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Summers</a>
                         </li>
-                        <li class="sidebar_image_items_women py-4 mt-2">
-                            <p>SUMMER</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Travels</a>
+                        </li>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Gifts</a>
                         </li>
                     </div>
 
-                    <div class="container px-0 mt-2" id="content-b">
-                        <li class="sidebar_home_image_men py-2">
-                            <a class="" href="/index.html">HOME</a>
+                    <div class="container sub_columns  px-0 mt-2 pb-2 position-absolute d-block overflow-x-hidden  overflow-y-scroll" id="content-b">
+                        <li class="side-bar-columns py-1 mt-2">
+                            <a class="text-dark font-weight-bold" href="/index.html">HOME</a>
                         </li>
                        
                         <li class="sales_discount">
@@ -259,26 +308,71 @@
                                 SALE UP TO 70% <br> OFF
                             </p>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>NEW IN</p>
+                      
+                        <li class="bg-light py-1  mt-2">
+
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar4">
+                                <button onclick="w4_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Clothing</button>
+                                <a href="#" class="w3-bar-item w3-button text-danger">item1</a>
+                                <a href="#" class="w3-bar-item w3-button">item2</a>
+                                <a href="#" class="w3-bar-item w3-button">item3</a>
+                              </div>
+                              
+                              <!-- Page Content -->
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w4_open()">Clothing </button>
+                                <i onclick="w4_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                <!-- <div class="w3-container">
+                                  <h1>My Page</h1>
+                                </div> -->
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>CLOTHING</p>
+                        <li class="bg-light py-1 mt-2">
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar5">
+                                <button onclick="w5_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Shoes</button>
+                                <a href="#" class="w3-bar-item w3-button text-danger">item1</a>
+                                <a href="#" class="w3-bar-item w3-button">item2</a>
+                                <a href="#" class="w3-bar-item w3-button">item3</a>
+                              </div>
+                              
+                              <!-- Page Content -->
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w5_open()">Shoes</button>
+                                <i onclick="w5_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                <!-- <div class="w3-container">
+                                  <h1>My Page</h1>
+                                </div> -->
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>DRESSES</p>
+                        <li class="bg-light py-1 mt-2">
+                            <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar6">
+                                <button onclick="w6_close()" class="w3-bar-item w3-button d-flex align-items-center font-weight-bold"><i class="fa fa-angle-left fa-2x pr-2 mb-1" aria-hidden="true"></i>Accessories</button>
+                                <a href="#" class="w3-bar-item w3-button text-danger">item1</a>
+                                <a href="#" class="w3-bar-item w3-button">item2</a>
+                                <a href="#" class="w3-bar-item w3-button">item3</a>
+                              </div>
+                              
+                              <div class="d-flex justify-content-between align-items-center px-2">
+                                <button class="w3-button font-weight-bold" onclick="w6_open()">Accessories</button>
+                                <i onclick="w6_open()" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                
+                              </div>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>SHOES</p>
+
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">New Arrivals</a>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>SPORTWEARS</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Best Sellers</a>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>ACCESSORIES</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Summers</a>
                         </li>
-                        <li class="sidebar_image_items_men py-4 mt-2">
-                            <p>SUMMER</p>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Travels</a>
+                        </li>
+                        <li class="bg-light py-1 mt-2 side-bar-columns">
+                            <a class="text-dark font-weight-bold" href="/index.html">Gifts</a>
                         </li>
                     </div>
                 </div>
@@ -287,8 +381,13 @@
 
         </div>
 
+          <!-- ************************************************************* -->
+            <!-- ************************************************************* -->
+            <!-- *****************SIDEBAR SECTION MODIFY Ends************ -->
+            <!-- ************************************************************* -->
+            <!-- ************************************************************* -->
 
-        <!--********************** HERO SECTION   *************************** -->
+        <!--********************** HERO SECTION  STARTs *************************** -->
 
         <div id="content-d" class="category">
             <div class="sub_category">
