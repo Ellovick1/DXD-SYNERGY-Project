@@ -288,10 +288,16 @@ section>div>div {
     margin-bottom: 30px;
 }
 
+/* **************************************** */
+/* **************************************** */
+/* **********NEW CHANGES************** */
+/* **************************************** */
+
 .might_like_sub-container {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 
 }
 
