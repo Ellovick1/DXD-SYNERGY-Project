@@ -129,11 +129,16 @@ section > div > div {
     height: fit-content;
     margin-bottom: 30px;
 }
+/* **************************************** */
+/* **************************************** */
+/* **********NEW CHANGES************** */
+/* **************************************** */
 
 .might_like_sub-container {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 
 }
 
