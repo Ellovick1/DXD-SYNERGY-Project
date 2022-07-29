@@ -9,7 +9,7 @@ $('.button.active').length && setContent($('.button.active'));
 
 function setContent($el) {
     $('.button').removeClass('active');
-    $('.container').hide();
+    $('.containera').hide();
     
     $el.addClass('active');
     $($el.data('rel')).show();
