@@ -22,6 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- ********************* -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
@@ -162,13 +164,26 @@
 
                 </li>
 
-                <form action="" class="py-2 form1">
-                    <div class="form-group input_field_area mb-0">
-                        <input type="text" class="form-control form-control-sm"
-                            placeholder="Search for items and brands" name="text1">
-                        <i class="fa fa-search search_icon" aria-hidden="true"></i>
+                <form class="search_container py-2 form1 form-group input_field_area mb-0">
+                    <i class="fa fa-search search_icon" aria-hidden="true"></i>
+                    <input type="text" class="form-control form-control-sm" list="list-language"
+                        placeholder="Search for items and brands" name="language">
+
+                    <div list="list-language">
+                        <span>CSharp</span>
+                        <span>Delphi</span>
+                        <span>Flutter</span>
+                        <span>Java</span>
+                        <span>Java Script</span>
+                        <span>PHP</span>
+                        <span>Python</span>
+                        <span>Ruby</span>
+                        <span>SAP</span>
+                        <span>Visual Basic</span>
                     </div>
+
                 </form>
+              
 
                 <!-- <li class="li_user_icon">
                     <a href="/pages/myAccount.html" class="empty_face">
@@ -415,21 +430,21 @@
         <div id="content-d" class="category">
 
             <div class="container-lg my-3 bg-success">
-                
+
                 <div id="myCarousel demo" data-ride="carousel" class="carousel slide">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="sub_category">
                                 <ul>
-                
+
                                     <li>
                                         <h4 href="">
                                             25% OFF EVERYTHING!* <br>
                                             <span>With code: WOO25</span>
                                         </h4>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>
@@ -437,14 +452,14 @@
                         <div class="carousel-item bg-dark">
                             <div class="sub_category bg-danger">
                                 <ul>
-                
+
                                     <li>
                                         <h4 href="">
                                             25% OFF EVERYTHING!* <br>
                                             <span>With code: WOO25</span>
                                         </h4>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>
@@ -452,51 +467,51 @@
                         <div class="carousel-item">
                             <div class="sub_category bg-success">
                                 <ul>
-                
+
                                     <li>
                                         <h4 href="">
                                             25% OFF EVERYTHING!* <br>
                                             <span>With code: WOO25</span>
                                         </h4>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>
 
-                        </div>
                     </div>
-
-                    <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
 
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
 
+        </div>
 
-            <section>
-                <div class="hero_section">
-                    <div class="text-center hero_section_header">
-                        <h1>This is DXD SYNERGY</h1>
-                        <p>DXD SYNERGY and 850+ brands</p>
-                        <div>
-                            <button class="fashion_category shop_women_button mb-3" data-rel="#content-e">SHOP
-                                WOMEN</button>
-                            <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP
-                                MEN</button>
-                        </div>
-                    </div>
-                    <div class="bottom_hero_section">
-                        <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
-                        <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
+
+        <section>
+            <div class="hero_section">
+                <div class="text-center hero_section_header">
+                    <h1>This is DXD SYNERGY</h1>
+                    <p>DXD SYNERGY and 850+ brands</p>
+                    <div>
+                        <button class="fashion_category shop_women_button mb-3" data-rel="#content-e">SHOP
+                            WOMEN</button>
+                        <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP
+                            MEN</button>
                     </div>
                 </div>
-            </section>
+                <div class="bottom_hero_section">
+                    <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
+                    <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
+                </div>
+            </div>
+        </section>
 
         </div>
 
@@ -623,7 +638,7 @@
                 <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
             </div>
 
-           
+
             <div class="hero_section_image mb-3">
                 <img src="/images/topman_image.jpg" alt="">
             </div>
