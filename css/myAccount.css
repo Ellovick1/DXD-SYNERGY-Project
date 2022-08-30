@@ -205,7 +205,7 @@ form{
   /* Show the indicator (dot/circle) when checked */
   .containers input:checked ~ .checkmark:after {
     display: block;
-  }
+  } 
   
   /* Style the indicator (dot/circle) */
   .containers .checkmark:after {

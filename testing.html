@@ -1,575 +1,154 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>DXD SYNERGY Project</title>
+  <head>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="/css/myOrders.css"> -->
-    <link rel="shortcut icon" href="/images/DXD_synergy_logo.jpg" type="image/x-icon">
+    <style>
+        /* * {
+  scrollbar-width: thin;
+    scrollbar-color: #BBB #EEE;
+} */
+/* 
+*::-webkit-scrollbar {
+  width: 10px;
+} */
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+/* *::-webkit-scrollbar-track {
+  background: #C0C3C6;
+} */
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+/* *::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #C0C3C6;
+} */
 
+table {
+    width: 400px;
+    margin: 0 auto;
+    background: #EEE;
+    font-family: Arial;
+    padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px -5px #000;
+    --border: 1px solid #ABC;
+}
+table td {
+  padding-bottom: 10px;
+  position: relative;
+}
+table h4 {
+  text-align: center;
+  color: #567;
+  border: 1px solid #567;
+  border-radius: 3px;
+  padding: 15px 0;
+}
+input {
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 20px);
+    border: var(--border);
+    border-radius: 3px;
+}
+input[list]:focus {
+    outline: none;
+}
+input[list] + div[list] {
+    display: none;
+    position: absolute;
+    width: 95%;
+    max-height: 164px;
+    overflow-y: auto;
+    /* max-width: 30rem; */
+    background: #FFF;
+    border: var(--border);
+    border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 3px 3px -3px #333;
+    z-index: 100;
+}
+input[list] + div[list] span {
+    display: block;
+    padding: 7px 5px 7px 20px;
+    color: #069;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[list] + div[list] span:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+input[list] + div[list] span:hover {
+    background: rgba(100, 120, 140, .2);
+}
 
-</head>
+table .instructions {
+  font-size: .9em;
+  color: #900;
+}
+table .instructions b {
+  color: #123;
+}
+    </style>
+  </head>
+  <body>
+      
 
-<body>
-    <main>
-        <div class="top_navbar">
-            <ul>
-                <li class="market_place">
-                    <a href="">Marketplace</a>
-                </li>
-
-                <li>
-                    <a href="">Help & FAQs</a>
-                </li>
-
-                <li>
-                    <a href=""><img src="/images/nigerian_flag.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-
-       
-
-        <!--************** MAIN NAVBAR SECTION***************** -->
-
-        <nav class="main_navbar">
-            <ul class="navbars">
-                <div class="navbrand_logo">
-                    <a class="fashion_category active" data-rel="#content-d" href="/index.html">
-                        <img src="/images/DXD_synergy_logo.jpg" alt="">
-                    </a>
+    <table width="400">
+        <tr>
+            <td> <h4>DATALIST STYLING ALTERNATIVE</h4> </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Programming languages</div>
+                <input type="text" name="language" list="list-language">
+                <div list="list-language">
+                    <span>CSharp</span>
+                    <span>Delphi</span>
+                    <span>Flutter</span>
+                    <span>Java</span>
+                    <span>Java Script</span>
+                    <span>PHP</span>
+                    <span>Python</span>
+                    <span>Ruby</span>
+                    <span>SAP</span>
+                    <span>Visual Basic</span>
                 </div>
-
-                <li class="women_section dropdowns">
-                    
-                    <a class="fashion_category dropbtns" data-rel="#content-e"
-                        href="/sub_category/women.html">WOMEN
-                    </a>
-
-                    
-                    <div class="dropdown-contents">
-                        <!-- <div class="headers">
-                          <h2>Mega Menu</h2>
-                        </div>    -->
-                        <div class="rows">
-                            <div class="columns">
-                              <!-- <h5>Shoes</h5> -->
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                            
-                              
-                            </div>
-                            <div class="columns">
-                              <h5><a href="" class="">Shoes</a></h5>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                            </div>
-                            <div class="columns">
-                                <h5><a href="" class="">Clothing</a></h5>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                            </div>
-                            <div class="columns">
-                              <h5><a href="">Accessories</a></h5>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              
-                            </div>
-                          </div>
-                      </div>
+            </td>
+        </tr>
+    </table>
 
 
-                    </li>
-
-                <li class="men_section dropdowns ">
-                    <a class="fashion_category dropbtns" data-rel="#content-f"
-                        href="/sub_category/men.html">MEN
-                    </a>
-
-                    <div class="dropdown-contents">
-                        <!-- <div class="headers">
-                          <h2>Mega Menu</h2>
-                        </div>    -->
-                        <div class="rows">
-                            <div class="columns">
-                              <!-- <h5>Shoes</h5> -->
-                            <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                           <h6><a href="">New Arrivals</a></h6>
-                            
-                              
-                              
-                            </div>
-                            <div class="columns">
-                              <h5><a href="" class="">Shoes</a></h5>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                              <a href="#">Sneakers</a>
-                            </div>
-                            <div class="columns">
-                                <h5><a href="" class="">Clothing</a></h5>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                              <a href="#">T-shirts</a>
-                            </div>
-                            <div class="columns">
-                              <h5><a href="">Accessories</a></h5>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              <a href="#">Wristwatch</a>
-                              
-                            </div>
-                          </div>
-                      </div>
-
-
-
-                    </li>
-               
-                <form action="" class="py-2 form1">
-                    <div class="form-group input_field_area mb-0">
-                        <input type="text" class="form-control form-control-sm"
-                            placeholder="Search for items and brands" name="text1">
-                        <i class="fa fa-search search_icon" aria-hidden="true"></i>
-                    </div>
-                </form>
-
-                <!-- <li class="li_user_icon">
-                    <a href="/pages/myAccount.html" class="empty_face">
-                        <i class="fa fa-user user_icon" aria-hidden="true"></i>
-                    </a>
-                </li> -->
-
-                <li class="li_suitcase pr-3">
-                    <!-- <div class="" id="countdown">hello</div> -->
-                    <a href="/pages/shopping.html">
-                        <div class="row  bg-danger justify-content-center border rounded-pill" id="countdown"></div>
-                        <i class="fa fa-cart-plus checkout_suitcase" aria-hidden="true"></i>
-                    </a>
-                </li>
-
-                <li class="li_suitcase">
-                    <a href="/pages/myOrders.html">
-                        <i class="fa fa-shopping-bag checkout_suitcase" aria-hidden="true"></i>
-                        <!-- <img src="/images/suitcase.jpg" alt="" class="checkout_suitcase"> -->
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-
-            <!-- ************************************************************* -->
-            <!-- ************************************************************* -->
-            <!-- *****************SIDEBAR SECTION MODIFY STARTS************************ -->
-            <!-- ************************************************************* -->
-            <!-- ************************************************************* -->
-
-        <div class="sidebar" id="home">
-            <input type="checkbox" id="click">
-            <label for="click" class="togglebar">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </label>
-
-
-            <ul>
-                <div class="toggle_button_container">
-                    <li class="li_women ">
-                        <button class="button active" data-rel="#content-a"
-                            href="">WOMEN
-                        </button>
-                    </li>
-                    <li class="li_men">
-                        <button class="button" data-rel="#content-b" href="">MEN</button>
-                    </li>
-                   
-                </div>
-                
-                <div class="px-3 position-relative side-bar_columns">
-                 
-
-                    <div class="containera sub_columns  px-0 mt-2 pb-2 position-absolute d-block overflow-x-hidden  overflow-y-scroll" id="content-a">
-                        hi
-                    </div>
-
-
-                    <div class="containera sub_columns  px-0 mt-2 pb-2 position-absolute d-block overflow-x-hidden  overflow-y-scroll" id="content-b">
-                        hello
-                    </div>
-
-
-
-                </div>
-
-            </ul>
-
-        </div>
-
-          <!-- ************************************************************* -->
-            <!-- ************************************************************* -->
-            <!-- *****************SIDEBAR SECTION MODIFY Ends************ -->
-            <!-- ************************************************************* -->
-            <!-- ************************************************************* -->
-
-        <!--********************** HERO SECTION  STARTs *************************** -->
-
-        <div id="content-d" class="category">
-            <div class="sub_category">
-                <ul>
-                    <!-- <li class="">
-                        <a class="fashion_category" data-rel="#content-e" href="/sub_category/women.html">WOMEN</a>
-                    </li> -->
-
-                    <li>
-                        <h4 href="">
-                            25% OFF EVERYTHING!* <br>
-                            <span>With code: WOO25</span>
-                        </h4>
-                    </li>
-                    <!-- <li>
-                        <a class="fashion_category" data-rel="#content-f" href="/sub_category/men.html">MEN</a>
-                    </li> -->
-                </ul>
-            </div>
-
-            <section>
-                <div class="hero_section">
-                    <div class="text-center hero_section_header">
-                        <h1>This is DXD SYNERGY</h1>
-                        <p>DXD SYNERGY and 850+ brands</p>
-                        <div>
-                            <button class="fashion_category shop_women_button mb-3" data-rel="#content-e">SHOP WOMEN</button>
-                            <button class="shop_men_button fashion_category mb-3" data-rel="#content-f">SHOP MEN</button>
-                        </div>
-                    </div>
-                    <div class="bottom_hero_section">
-                        <p class="mb-0">EASY DELIVERY WORLDWIDE</p>
-                        <p class="mb-0">DISCOVER OVER 850 BRANDS</p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- /****************  WOMEN FASHION SECTION ****************** */ -->
-
-        <div id="content-e" class="category">
-            <div class="outlet_discount_women">
-                <h2>OUTLET</h2>
-                <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
-                </h3>
-                <h6>With code: STYLES </h6>
-                <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
-            </div>
-    
-            <div class="hero_section_image_women">
-                <img src="/images/topwoman_image.jpg" alt="">
-            </div>
-    
-            <div class="topwomen_images_clothing">
-                <div>
-                    <div class="">
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                    <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-            </div>
-    
-            <div class="outlet_discount_women">
-                <h2>OUTLET</h2>
-                <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
-                </h3>
-                <h6>With code: STYLES </h6>
-                <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
-            </div>
-    
-            <div class="topwomen_images_clothing2">
-                <div>
-                    <div class="">
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                    <h6>CRAFTY WERK</h6>
-                    <p>Textural Healing</p>
-                    <button>DXD SYNERGY DESIGN</button>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topwomen_img.jpg" alt="">
-                    </div>
-                     <h6>DELIGHT SUMMER</h6>
-                     <p>Laid back looks</p>
-                     <button>DXD SYNERGY DESIGN</button>
-                </div>
-               
-            </div>
-    
-            <!-- ******** TRENDING BRANDS WOMEN SECTION ******* -->
-
-            <div class="trending_brands_women_section">
-                <h1>TRENDING BRANDS</h1>
-               <div class="brand_logos_women">
-                <div class="brand_logos_image_women">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div class="brand_logos_image_women">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-               </div>
-            </div>
-        </div>
-
-
-
-            <!--******************* MEN FASHION SECTION *************************** -->
-        
-        <div id="content-f" class="category">
-            <div class="outlet_discount">
-                <h2>OUTLET</h2>
-                <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
-                </h3>
-                <h6>With code: STYLES  </h6>
-                <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
-            </div>
-    
-            <div class="hero_section_image mb-3">
-                <img src="/images/topman_image.jpg" alt="">
-            </div>
-    
-            <div class="topmen_images_clothing">
-                <div>
-                    <div class="">
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                    <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                     <h6>ADIDAS ORIGINAL</h6>
-                    <p>3 stripes and you're in</p>
-                </div>
-            </div>
-    
-            <div class="outlet_discount">
-                <h2>OUTLET</h2>
-                <h3>
-                    20% OFF 1500 STYLES! <br> ALREADY UP TO 70% OFF 
-                </h3>
-                <h6>With code: STYLES  </h6>
-                <p>Outlet items only. See websites banner for Ts%Cs. Selected marked products excluded from promo</p>
-            </div>
-    
-            <div class="topmen_images_clothing2">
-                <div>
-                    <div class="">
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                    <h6>CRAFTY WERK</h6>
-                    <p>Textural Healing</p>
-                    <button>DXD SYNERGY DESIGN</button>
-                </div>
-                <div>
-                    <div>
-                        <img src="/images/topmen_img.jpg" alt="">
-                    </div>
-                     <h6>DELIGHT SUMMER</h6>
-                     <p>Laid back looks</p>
-                     <button>DXD SYNERGY DESIGN</button>
-                </div>
-               
-            </div>
-
-            <!-- /* TRENDING BRANDS SECTION MEN*/ -->
-
-            <div class="trending_brands_section">
-                <h1>TRENDING BRANDS</h1>
-               <div class="brand_logos">
-                <div class="brand_logos_image">
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg" alt="">
-                </div>
-               </div>
-            </div>
-        </div>
-
-
-
-        <footer>
-            <div class="icons_and_images">
-                <ul class="font_awesome_icons">
-                    <a href=""><i class="fa fa-facebook-official facebook_icon" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-instagram instagram_icon" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-snapchat-ghost snapchat_icon" aria-hidden="true"></i></a>
-                </ul>
-
-                <ul class="electronic_images">
-                    <li class="visa_image"><img src="https://images.asos-media.com/navigation/visa-png" alt=""></li>
-                    <li class="mastercard_image"><img src="https://images.asos-media.com/navigation/mastercard-png"
-                            alt="">
-                    </li>
-                    <li class="pay-pal_image"><img src="https://images.asos-media.com/navigation/pay-pal-png"
-                            alt=""></li>
-                    <li class="american-express_image"><img
-                            src="https://images.asos-media.com/navigation/american-express-png" alt=""></li>
-                    <li class="visa-electron_image"><img
-                            src="https://images.asos-media.com/navigation/visa-electron-png" alt=""></li>
-                </ul>
-            </div>
-
-            <div class="d-md-flex footer_information">
-                <div class="col-md-3">
-                    <h6>HELP & INFORMATION</h6>
-                    <p><a href="">Help</a></p>
-                    <p><a href="">Track order</a></p>
-                    <p><a href="">Delivery & returns</a></p>
-                </div>
-
-                <div class="col-md-3">
-                    <h6>ABOUT DXD SYNERGY</h6>
-                    <p><a href="">About us</a></p>
-                    <p><a href="">Careers at DXD SYNERGY</a></p>
-                    <p><a href="">Corporate responsiblity</a></p>
-                    <p><a href="">Investors' site</a></p>
-                </div>
-
-                <div class="col-md-3">
-                    <h6>MORE FROM DXD SYNERGY</h6>
-                    <p><a href="">Mobile and DXD SYNERGY apps</a></p>
-                    <p><a href="">DXD SYNERGY Marketplace</a></p>
-                    <p><a href="">Gift vouchers</a></p>
-                    <p><a href="">Black Friday</a></p>
-                </div>
-
-                <div class="col-md-3">
-                    <h6>SHOPPING FROM:</h6>
-                    <a href="">
-                        You're in <span><img class="footer_flag" src="/images/nigerian_flag.png" alt=""></span>
-                        <span>Change</span>
-
-                    </a>
-                </div>
-            </div>
-
-            <div class="d-md-flex bottom_of_footer">
-                <div class="col-md-6">
-                    <p class="copyright">
-                        <i class="fa fa-copyright" aria-hidden="true"></i>
-                        2022 DXD SYNERGY
-                    </p>
-                </div>
-
-                <div class="col-md-6 cookies">
-                    <p class="mb-0"><a class="privacy_and_cookies" href="">Privacy & Cookies</a></p>
-                    <p class="mb-0"><a class="terms_and_condition" href="">Ts&Cs</a></p>
-                    <p class="mb-0"><a href="">Accessibility</a></p>
-                </div>
-            </div>
-        </footer>
-    </main>
+    <div class="position-relative">
+      <i class="fa fa-search search_icon" aria-hidden="true"></i>
+      <div class="search_container">
+          <tr>
+              <td>
+                  <input type="text" name="language" list="list-language">
+                  <div list="list-language">
+                      <span>CSharp</span>
+                      <span>Delphi</span>
+                      <span>Flutter</span>
+                      <span>Java</span>
+                      <span>Java Script</span>
+                      <span>PHP</span>
+                      <span>Python</span>
+                      <span>Ruby</span>
+                      <span>SAP</span>
+                      <span>Visual Basic</span>
+                  </div>
+              </td>
+          </tr>
+      </div>
+  </div>
 
 
 
@@ -579,26 +158,72 @@
 
 
 
+<script>
+    $(document).on('dblclick', 'input[list]', function(event){
+    event.preventDefault();
+        var str = $(this).val();
+    $('div[list='+$(this).attr('list')+'] span').each(function(k, obj){
+            if($(this).html().toLowerCase().indexOf(str.toLowerCase()) < 0){
+                $(this).hide();
+            }
+        })
+    $('div[list='+$(this).attr('list')+']').toggle(100);
+    $(this).focus();
+})
 
+$(document).on('blur', 'input[list]', function(event){
+        event.preventDefault();
+        var list = $(this).attr('list');
+        setTimeout(function(){
+            $('div[list='+list+']').hide(100);
+        }, 100);
+    })
 
+    $(document).on('click', 'div[list] span', function(event){
+        event.preventDefault();
+        var list = $(this).parent().attr('list');
+        var item = $(this).html();
+        $('input[list='+list+']').val(item);
+        $('div[list='+list+']').hide(100);
+    })
 
+$(document).on('keyup', 'input[list]', function(event){
+        event.preventDefault();
+        var list = $(this).attr('list');
+    var divList =  $('div[list='+$(this).attr('list')+']');
+    if(event.which == 27){ // esc
+        $(divList).hide(200);
+        $(this).focus();
+    }
+    else if(event.which == 13){ // enter
+        if($('div[list='+list+'] span:visible').length == 1){
+            var str = $('div[list='+list+'] span:visible').html();
+            $('input[list='+list+']').val(str);
+            $('div[list='+list+']').hide(100);
+        }
+    }
+    else if(event.which == 9){ // tab
+        $('div[list]').hide();
+    }
+    else {
+        $('div[list='+list+']').show(100);
+        var str  = $(this).val();
+        $('div[list='+$(this).attr('list')+'] span').each(function(){
+          if($(this).html().toLowerCase().indexOf(str.toLowerCase()) < 0){
+            $(this).hide(200);
+          }
+          else {
+            $(this).show(200);
+          }
+        })
+      }
+    })
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <!-- JAVASCRIPT LINK -->
-    <script src="/js/main.js"></script>
-    <!-- <script async src="//jsfiddle.net/wyEq7/embed/"></script> -->
-
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
